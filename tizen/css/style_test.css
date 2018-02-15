@@ -1,0 +1,14 @@
+.section {
+    position: relative;
+}
+
+.sticky_section {
+    position: absolute;
+    top:0;
+    lefT: 0;
+    width: 100%;
+}
+
+#slider-game #slider1 .body-slider {
+    background-attachment: scroll;
+}
