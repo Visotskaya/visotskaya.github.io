@@ -1,0 +1,168 @@
+.button--moema {
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+.button--moema::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  bottom: -20px;
+  right: -20px;
+  background: inherit;
+  border-radius: 50px;
+  z-index: -1;
+  opacity: 0.4;
+  -webkit-transform: scale3d(0.8, 0.5, 1);
+  transform: scale3d(0.8, 0.5, 1);
+}
+.button--moema:active{
+  -webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+  transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+  -webkit-animation: anim-moema-1 0.3s forwards;
+  animation: anim-moema-1 0.3s forwards;
+}
+.button--moema:active::before {
+  -webkit-animation: anim-moema-2 0.3s 0.3s forwards;
+  animation: anim-moema-2 0.3s 0.3s forwards;
+}
+@-webkit-keyframes anim-moema-1 {
+  60% {
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+  }
+  85% {
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes anim-moema-1 {
+  60% {
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+  }
+  85% {
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes anim-moema-2 {
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes anim-moema-2 {
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes text-animate{from,to{-webkit-transform:translateY(20px);transform:translateY(20px);opacity:0;}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1;}}
+@keyframes text-animate{from,to{-webkit-transform:translateY(20px);transform:translateY(20px);opacity:0;}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1;}}
+
+@-webkit-keyframes anim-elem {
+  0% { opacity: 0; -webkit-transform: translate3d(0, 25px, 0); }
+  100% { opacity: 1; -webkit-transform: translate3d(0, 0, 0); }
+}
+
+@keyframes anim-elem {
+  0% { opacity: 0; -webkit-transform: translate3d(0, 25px, 0); transform: translate3d(0, 25px, 0); }
+  100% { opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+}
+
+@-webkit-keyframes anim-elem-left {
+  0% { opacity: 0; -webkit-transform: translate3d(25px, 0, 0); }
+  100% { opacity: 1; -webkit-transform: translate3d(0, 0, 0); }
+}
+
+@keyframes anim-elem-left {
+  0% { opacity: 0; -webkit-transform: translate3d(25px, 0, 0); transform: translate3d(25px, 0, 0); }
+  100% { opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+}
+
+.action-animate .item-count .box-value{
+  opacity: 0;
+  -webkit-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+.action-animate.active .item-count .box-value{
+  -webkit-animation: text-animate 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation: text-animate 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  opacity: 1;
+}
+.action-animate .block-vacancy,
+.action-animate .block-project{
+  opacity: 0;
+  -webkit-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+.action-animate.active .action,
+.action-animate.active .block-vacancy,
+.action-animate.active .block-project{
+  -webkit-animation: text-animate 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation: text-animate 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  opacity: 1;
+}
+.modal-open .modal .action{
+  -webkit-animation: anim-elem 0.3s both;
+  animation: anim-elem 0.3s both;
+}
+.modal-open .modal .modal-header .action:first-child{
+  -webkit-animation-delay: 0.05s;
+  animation-delay: 0.05s;
+}
+.modal-open .modal .modal-header .action:nth-child(2){
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.modal-open .modal .modal-body .action:first-child{
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+.modal-open .modal .modal-body .action:nth-child(2){
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.modal-open .modal .modal-body .action:nth-child(3){
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+.modal-open .modal .modal-body .action:nth-child(4){
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.navbar-collapse.in .nav-main>li{
+  -webkit-animation: anim-elem-left 0.3s both 0.3s;
+  animation: anim-elem-left 0.3s both 0.3s;
+}
+.navbar-collapse.in .nav-main>li:nth-child(2){
+  -webkit-animation-delay: 0.35s;
+  animation-delay: 0.35s;
+}
+.navbar-collapse.in .nav-main>li:nth-child(3){
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.navbar-collapse.in .nav-main>li:nth-child(4){
+  -webkit-animation-delay: 0.45s;
+  animation-delay: 0.45s;
+}
+.navbar-collapse.in .nav-main>li:nth-child(5){
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.navbar-collapse.in .nav-main>li:nth-child(6){
+  -webkit-animation-delay: 0.55s;
+  animation-delay: 0.55s;
+}

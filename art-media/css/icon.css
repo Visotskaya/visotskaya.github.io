@@ -1,0 +1,348 @@
+.icon{
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -2px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.icon-middle{
+  vertical-align: middle;
+  margin-top: -2px;
+}
+.icon-right{
+  margin-left: 0.5em;
+}
+.icon-left{
+  margin-right: 0.5em;
+}
+.icon_people{
+  background-image: url(../SVG/70EMPLOYERS.svg);
+  width: 84px;
+  height: 70px;
+  background-size: 84px 70px;
+}
+.icon_hat{
+  background-image: url(../SVG/STUDY.svg);
+  width: 70px;
+  height: 70px;
+  background-size: 70px 70px;
+}
+.icon-balloon{
+  background-image: url(../SVG/BALOONS.svg);
+  width: 60px;
+  height: 70px;
+  background-size: 60px 70px;
+}
+.icon_protection{
+  background-image: url(../SVG/SHIELD.svg);
+  width: 45px;
+  height: 50px;
+  background-size: 45px 50px;
+}
+.icon_comfort{
+  background-image: url(../SVG/WORKSPACE.svg);
+  width: 80px;
+  height: 60px;
+  background-size: 80px 60px;
+}
+.icon_pay{
+  background-image: url(../SVG/WALLET.svg);
+  width: 60px;
+  height: 50px;
+  background-size: 60px 50px;
+}
+.icon_development{
+  background-image: url(../SVG/GRAPH.svg);
+  width: 65px;
+  height: 30px;
+  background-size: 65px 30px;
+}
+.icon_sun{
+  background-image: url(../SVG/SUNSET.svg);
+  width: 60px;
+  height: 45px;
+  background-size: 60px 45px;
+}
+.icon-java{
+  background-image: url(../SVG/JAVA-white.png);
+  width: 25px;
+  height: 30px;
+  background-size: 25px 30px;
+}
+.icon-windows{
+  background-image: url(../SVG/WINDOWS-white.png);
+  width: 21px;
+  height: 21px;
+  background-size: 21px 21px;
+}
+.icon-net{
+  background-image: url(../SVG/NET-white.png);
+  width: 32px;
+  height: 12px;
+  background-size: 32px 12px;
+}
+.icon-ecopayz{
+  background-image: url(../img/project/ecopayz.png);
+  width: 171px;
+  height: 41px;
+}
+.icon-infolio{
+  background-image: url(../img/project/infolio.png);
+  width: 195px;
+  height:61px;
+}
+.icon-swiss{
+  background-image: url(../img/project/swiss.png);
+  width: 207px;
+  height: 49px;
+}
+.icon.icon-brain {
+  background-image: url(../SVG/Brainstorm.svg);
+  width: 90px;
+  height: 90px;
+  background-size: 90px 90px;
+}
+.icon-information{
+  background-image: url(../img/svg/dotnet.svg);
+  width: 61px;
+  height: 76px;
+  background-size: 61px 76px;
+}
+.icon-information.white{
+  background-image: url(../img/svg/dotnet-white.svg);
+}
+.icon-employers{
+  width: 48px;
+  height: 32px;
+  background-image: url("../img/svg/EMPLOYERS.svg");
+  background-size: 48px 32px;
+}
+.icon-project{
+  width: 33px;
+  height: 26px;
+  background-image: url("../img/svg/CASES.svg");
+  background-size: 33px 26px;
+}
+.icon-year{
+  width: 33px;
+  height: 33px;
+  background-image: url("../img/svg/CALENDAR.svg");
+  background-size: 33px 33px;
+}
+.icon-positive{
+  width: 30px;
+  height: 35px;
+  background-image: url("../img/svg/BALOONS.svg");
+  background-size: 30px 35px;
+}
+.icon-building{
+  width: 39px;
+  height:42px;
+  background-image: url("../SVG/2OFFICES.svg");
+  background-size: 39px 42px;
+}
+.icon-cloud{
+  width: 54px;
+  height: 45px;
+  background-image: url("../SVG/Deyat1.svg");
+  background-size: 54px 45px;
+}
+.icon-programs{
+  width: 46px;
+  height: 54px;
+  background-image: url("../SVG/Deyat2.svg");
+  background-size: 46px 54px;
+}
+.icon-consulting{
+  width: 48px;
+  height: 48px;
+  background-image: url("../SVG/Deyat3.svg");
+  background-size: 48px 48px;
+}
+.icon-soft{
+  width: 55px;
+  height: 43px;
+  background-image: url("../SVG/Deyat4.svg");
+  background-size: 55px 43px;
+}
+.icon-it{
+  width: 48px;
+  height: 44px;
+  background-image: url("../SVG/Deyat5.svg");
+  background-size: 48px 44px;
+}
+.icon-po{
+  width: 50px;
+  height: 40px;
+  background-image: url("../SVG/Deyat6.svg");
+  background-size: 50px 40px;
+}
+.icon-mobile{
+  width:31px;
+  height: 54px;
+  background-image: url("../SVG/Deyat7.svg");
+  background-size:31px 54px;
+}
+.icon-integration{
+  width: 54px;
+  height: 48px;
+  background-image: url("../SVG/Deyat8.svg");
+  background-size: 54px 48px;
+}
+.icon-html{
+  width: 76px;
+  height: 75px;
+  background-image: url("../img/svg/WEBDEV.svg");
+  background-size: 76px 75px;
+}
+.icon-html.white{
+  background-image: url("../img/svg/WEBDEV-white.svg");
+}
+.icon-brain.white{
+  background-image: url("../SVG/Brainstorm-white.svg");
+}
+.icon-designer{
+  width: 61px;
+  height: 76px;
+  background-image: url("../img/svg/DESIGNER.svg");
+  background-size: 61px 76px;
+}
+.icon-designer.white{
+  background-image: url("../img/svg/DESIGNER-white.svg");
+}
+.icon-study{
+  width: 51px;
+  height: 32px;
+  background-image: url("../img/svg/EDUCATION.svg");
+}
+.icon-world{
+  width: 41px;
+  height: 41px;
+  background-image: url("../img/svg/GLOBE.svg");
+}
+.icon-party{
+  width:41px;
+  height: 47px;
+  background-image: url("../img/svg/PARTY.svg");
+}
+.icon-prof{
+  width: 47px;
+  height: 36px;
+  background-image: url("../img/svg/EDUCATION-1.svg");
+}
+.icon-team{
+  width: 57px;
+  height: 38px;
+  background-image: url("../img/svg/TEAMWORK.svg");
+}
+.icon-growth{
+  width: 33px;
+  height: 57px;
+  background-image: url("../img/svg/GROWTH.svg");
+}
+.icon-tennis{
+  width: 45px;
+  height: 44px;
+  background-image: url("../img/svg/Tennis.svg");
+}
+.icon-poker{
+  width: 53px;
+  height: 40px;
+  background-image: url("../img/svg/Poker.svg");
+}
+.icon-kicker{
+  width: 59px;
+  height: 39px;
+  background-image: url("../img/svg/Kicker.svg");
+}
+.icon-english{
+  width: 39px;
+  height: 38px;
+  background-image: url("../img/svg/English.svg");
+}
+.icon-games{
+  width: 50px;
+  height: 38px;
+  background-image: url("../img/svg/Dice.svg");
+}
+.icon-snowboard{
+  width: 41px;
+  height: 38px;
+  background-image: url("../img/svg/Snowboard.svg");
+}
+.icon-football{
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/svg/Soccer.svg");
+}
+.icon-music{
+  width: 34px;
+  height: 39px;
+  background-image: url("../img/svg/Music.svg");
+}
+.icon-tell{
+  width: 11px;
+  height: 13px;
+  background-image: url("../img/svg/PHONE.svg");
+  background-size: 11px 13px;
+}
+.icon-email{
+  width: 16px;
+  height: 18px;
+  background-image: url("../img/svg/SKYPE.svg");
+  background-size: 16px 18px;
+}
+.icon-partner{
+  width: 36px;
+  height: 65px;
+  background-image: url("../img/svg/CONFERENCE.svg");
+}
+.icon-shares{
+  width: 58px;
+  height: 53px;
+  background-image: url("../img/svg/HEART.svg");
+}
+.icon-open{
+  width: 72px;
+  height: 72px;
+  background-image: url("../img/svg/OPENDOOR.svg");
+  margin-top: -20px;
+}
+.icon-teams{
+    width: 88px;
+    height: 42px;
+    background-image: url("../img/svg/TEAM.svg");
+    background-size: 88px 42px;
+}
+.icon-workspase{
+    width: 62px;
+    height: 48px;
+    background-image: url("../img/svg/WORKSPACE.svg");
+    background-size: 62px 48px;
+}
+.icon-wallet{
+    width: 68px;
+    height: 62px;
+    background-image: url("../img/svg/WALLET.svg");
+    background-size: 68px 62px;
+}
+.icon-shield{
+    width: 55px;
+    height: 68px;
+    background-image: url("../img/svg/SHIELD.svg");
+    background-size: 55px 68px;
+}
+.icon-office{
+    width: 65px;
+    height: 52px;
+    background-image: url("../img/svg/OFFICE.svg");
+    background-size: 65px 52px;
+}
+.icon-file{
+  width: 23px;
+  height: 29px;
+  background-image: url("../img/svg/ADD_CV.svg");
+}
+.icon-file.white{
+  background-image: url("../img/svg/ADD_CV-white.svg");
+}
