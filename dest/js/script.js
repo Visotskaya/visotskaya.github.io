@@ -6,7 +6,7 @@ $(window).on('load', function () {
 //timer
 if (($("#timer")).length != 0) {
   function updateTimer() {
-    future = Date.parse("May 1, 2018 00:00:00");
+    future = Date.parse("Dec 1, 2025 00:00:00");
     now = new Date();
     diff = future - now;
     days = Math.floor(diff / (1000 * 60 * 60 * 24));
