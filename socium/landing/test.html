@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"><!--was generated from sass-->
+</head>
+<body style="background: url('images/bg-blog.jpg') repeat-x">
+<style>
+    body{
+        font-size: 16px;
+    }
+  .cookie-settings{
+    background: rgba(255,255,255,0.6);
+      position: fixed;
+      top:0;
+      left:0;
+      width: 100%;
+      height: 100%;
+      padding: 1.5em;
+      overflow-y: auto;
+      z-index: 202;
+  }
+  .cookie-settings-content{
+      min-height: 100%;
+      justify-content: center;
+      -ms-flex-pack: center!important;
+      display: flex;
+      display: -ms-flexbox;
+      align-items: center;
+      -ms-flex-align: center;
+  }
+  .cookie-settings-form{
+    max-width: 64em;
+      width: 110%;
+      background-color: #FFFFFF;
+      box-shadow: 0 5px 30px  rgba(0,0,0,0.15);
+      border-radius: 3px;
+      color: #303030;
+  }
+    .cookie-settings-form_header{
+        font-size: 1.75em;
+        text-align: center;
+        position: relative;
+        border-bottom:1px solid rgba(170, 170, 170, 0.5);
+        padding: 1.1em;
+    }
+    .cookie-settings-form_header .close{
+        color: #AAAAAA;
+        position: absolute;
+        top:20px;
+        right: 20px;
+        z-index: 3;
+        width: 16px;
+        height: 16px;
+    }
+    .cookie-settings-form_header .cross{
+        width: 2px;
+        height: 20px;
+        background: #AAAAAA;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        display: block;
+    }
+    .cookie-settings-form_header .cross:after{
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        background: inherit;
+        width: 100%;
+        height: 100%;
+        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+    }
+    .cookie-settings-form_tabs{
+        display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+    }
+    .cookie-settings-form_tabs .nav-tabs{
+        background: #F2F2F4;
+        width: 25%;
+        display: block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .cookie-settings-form_tabs .nav-tabs a{
+        display: block;
+        border-left: 3px solid transparent;
+        font-size: 1em;
+        line-height: 1.125;
+        color: #010101;
+        padding: 1.35em 1.75em;
+    }
+    .cookie-settings-form_tabs .nav-tabs a:hover{
+        background: rgba(170, 170, 170, 0.3);
+    }
+    .cookie-settings-form_tabs .nav-tabs .active a{
+        background: white;
+        border-color: #8CC23C;
+        color:#033564;
+        font-weight: bold;
+    }
+    .cookie-settings-form_tabs .tab-content .box-right{
+        float: right;
+    }
+    .cookie-settings-form_tabs .tab-content{
+        width: 75%;
+        padding: 2.25em 2.5em;
+        min-height: 28.75em;
+    }
+    .cookie-settings-form_tabs .tab-content .text{
+        font-size: 1em;
+        margin-top: 1.75em;
+        line-height: 1.5em;
+    }
+    .cookie-settings-form_tabs .tab-content h2{
+        font-size: 1.5em;
+        font-weight: normal;
+    }
+    .tab-pane{
+        display: none;
+    }
+    .tab-pane.active{
+        display: block;
+    }
+    .cookie-settings-switcher{
+        background: #E7E7E9;
+        cursor: pointer;
+        padding: 0 5px;
+        border-radius: 26px;
+        text-decoration: none;
+        transition: all .2s ease;
+        height: 26px;
+        width: 46px;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+        z-index: 2;
+    }
+    .cookie-settings-switcher .switcher{
+        width: 22px;
+        height: 22px;
+        background: #ffffff;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        transition: all .2s ease;
+        -webkit-transition: all .2s ease;
+    }
+    .cookie-settings-switcher.on{
+        background: #8CC23C;
+    }
+    .cookie-settings-switcher.on .switcher{
+        left: 100%;
+        margin-left: -24px;
+    }
+    .cookie-settings-close-panel{
+        font-size: 14px;
+        color: #999999;
+        padding:20px 55px;
+        position: absolute;
+        left:0;
+        background: white;
+        width: 100%;
+        display: none;
+        z-index: 1;
+        bottom: 100%;
+        margin-bottom: 3.25em;
+    }
+    .cookie-settings-close-panel:before{
+        height: 2px;	width: 15px;	background-color: #AAAAAA;
+        margin-top: -1px;
+    }
+    .cookie-settings-close-panel:after{
+        height: 8px;
+        width: 8px;
+        border-top: 2px solid #AAAAAA;
+        border-left: 2px solid #AAAAAA;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        margin-top: -5px;
+    }
+    .cookie-settings-close-panel:before,
+    .cookie-settings-close-panel:after{
+        position: absolute;
+        content: '';
+        top:50%;
+        left:1.75em;
+    }
+    @media screen and (max-width: 720px), screen and (max-device-width: 720px){
+        .cookie-settings-form_header{
+            padding-top: 2em;
+            padding-bottom: 0.5em;
+            border: 0;
+        }
+        .cookie-settings-form_tabs{
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        .cookie-settings-form_tabs .nav-tabs{
+            width: 100%;
+            background: none;
+        }
+        .cookie-settings-form_tabs .nav-tabs li+li{
+            border-top:1px solid rgba(170, 170, 170, 0.5);
+        }
+        .cookie-settings-form_tabs .nav-tabs a{
+            border-left: 0;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+            position: relative;
+        }
+        .cookie-settings-form_tabs .nav-tabs a:after{
+            height: 7px;
+            width: 7px;
+            border-right: 2px solid #8CC23C;
+            border-bottom: 2px solid #8CC23C;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            position: absolute;
+            top:50%;
+            margin-top: -3px;
+            content: '';
+            right: 1.5em;
+        }
+        .cookie-settings-form_tabs .nav-tabs .active a{
+            border-color: transparent;
+            color: #010101;
+            font-weight: normal;
+        }
+        .cookie-settings-form_tabs .tab-pane{
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 100%;
+            background: white;
+            height: 100%;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+            margin-top: -2.75em;
+        }
+        .cookie-settings-form_tabs .tab-pane.active{
+            left: 0;
+        }
+        .cookie-settings-form_tabs .tab-pane.active ~ .cookie-settings-close-panel{
+            display: block;
+        }
+    }
+</style>
+    <div class="cookie-settings">
+        <div class="cookie-settings-content">
+        <div class="cookie-settings-form">
+            <div class="cookie-settings-form_header">
+                Cookie Settings
+                <a class="close"><span class="cross"></span></a>
+            </div>
+            <div class="cookie-settings-form_tabs">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation"><a href="#how" aria-controls="how" role="tab" data-toggle="tab">How we use cookies</a></li>
+                    <li role="presentation" class="active"><a href="#essential" aria-controls="essential" role="tab" data-toggle="tab">Essential website cookies</a></li>
+                    <li role="presentation"><a href="#func" aria-controls="func" role="tab" data-toggle="tab">Functionality and
+                        performance cookies</a></li>
+                    <li role="presentation"><a href="#analytics" aria-controls="analytics" role="tab" data-toggle="tab">Analytics and
+                        customisation cookies</a></li>
+                    <li role="presentation"><a href="#policy" aria-controls="policy" role="tab" data-toggle="tab">
+                        Cookie policy</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane" id="how">...</div>
+                    <div role="tabpanel" class="tab-pane active" id="essential">
+                        <div class="box-right">
+                            <a class="cookie-settings-switcher on"><div class="switcher"></div></a>
+                        </div>
+                        <h2>Essential website cookies</h2>
+                        <div class="text">
+                            These cookies are necessary to provide you with key features and services available through our website, such as the ability to access our secure area. Without these cookies, our website would not work properly and you would not be able to use certain important features. You can block or delete them by changing your browser settings.
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="func">...</div>
+                    <div role="tabpanel" class="tab-pane" id="analytics">...</div>
+                    <div role="tabpanel" class="tab-pane" id="target">...</div>
+                    <div role="tabpanel" class="tab-pane" id="policy">...</div>
+                    <a class="cookie-settings-close-panel">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/tab.js"></script>
+<script>
+    $('.cookie-settings-switcher').on('click', function () {
+        $(this).toggleClass('on');
+    });
+    $('.cookie-settings-close-panel').on('click', function () {
+        $('.tab-pane, .nav-tabs li').removeClass('active');
+    });
+    $('.cookie-settings-form_header .close').on('click', function () {
+        $('.cookie-settings').fadeOut();
+    });
+</script>
+</body>
+
+</html>

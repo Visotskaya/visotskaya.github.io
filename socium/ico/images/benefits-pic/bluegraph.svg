@@ -1,0 +1,54 @@
+<svg id="bluegraph" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="845.22" height="476.38" viewBox="0 0 845.22 476.38">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        opacity: 0.15;
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #0688fb;
+        stroke-width: 3px;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1476.5" y1="3494" x2="1476.5" y2="3968" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3b86ff"/>
+      <stop offset="1" stop-color="#3b86ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path id="Фигура_1" data-name="Фигура 1" class="cls-1" d="M1702,3648.08l21-10.99,19-49.99,10-22,10,1,10,9,12,5,19-2,25-20.99s18.25-23.25,36-40.11c19.1-18.15,33-23,33-23l-1,465.39s-820.87,8.12-830.22,8.61-9.78-113-9.78-113,17.91-47.62,41.89-90.43c25.15-44.89,56.96-85.3,81.79-95.22,28.66-11.45,58.44,36.38,82.38,41.19,13.27,2.67,17.17,0,17.17,0s43.87-15.21,49.79-14.03,13.18,1.82,20.67,2.95,26.57,8.85,26.57,8.85l54.71,24.75,58.03-45.99,21-8.99,30,2.99,30,17,35,22.99,23,12,21-9a295.707,295.707,0,0,0,17-33.99,86.909,86.909,0,0,1,18-26.99" transform="translate(-1055.5 -3491.62)"/>
+  <path id="Фигура_864" data-name="Фигура 864" class="cls-2" d="M1057,3852.03s20.98-63.91,56-113.97c69.44-99.25,82.89-68.04,119-49.99,23.48,11.74,14.52,25.92,70,15,18.23-3.59,35-5,35-5s9.81-3.11,29,4c79.06,29.31,44.27,49.67,110-5,51.8-43.09,78.35-12.8,108,10,52,39.99,64.33,19.66,75-3,38.04-80.82,46.9-38.18,71-88.98,8.8-18.54,8.54-74.43,44-40.99,27.01,25.47,66.99-34.13,70-37.99,22.56-28.9,54-42.99,54-42.99" transform="translate(-1055.5 -3491.62)"/>
+</svg>

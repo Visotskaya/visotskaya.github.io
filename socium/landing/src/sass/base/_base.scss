@@ -1,0 +1,207 @@
+$font_family: 'ProximaNova-Reg', Arial, Helvetica, sans-serif;
+$font_family_bold: 'ProximaNova-Bold', Arial, Helvetica, sans-serif;
+$font_family_light: 'ProximaNova-Light', Arial, Helvetica, sans-serif;
+$font_family_title: 'PT Serif', Arial, Helvetica, sans-serif;
+$color_white: #ffffff;
+$color_black: #000000;
+$color_gray_1: #333333;
+$color_green_1: #5EB682;
+$color_red_1: #E44848;
+$color_red_2: #ba2222;
+$color_yellow_1: #ffdd2b;
+$color_blue_1: #064CBE;
+$color_blue_2: #043888;
+$color_text:#15161C;
+$color_text-small:#263858;
+$color_title:#5a0a0a;
+
+$bg_cur:#132033;
+$bg_hover:#20324C;
+$bg_footer:#172444;
+$bg_gray:#f3f4f9;
+
+$border_color_1:#3D4653;
+$border_color_2:#EFEFEE;
+$border_color_3:#0A132A;
+
+@mixin bg_gradient_blue(){
+  background: -moz-linear-gradient(top, rgba(6,74,186,0) 0%, rgba(6,76,190,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(6,74,186,0) 0%,rgba(6,76,190,1) 100%);
+  background: linear-gradient(to bottom, rgba(6,74,186,0) 0%,rgba(6,76,190,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00064aba', endColorstr='#064cbe',GradientType=0 );
+}
+
+body{
+  font-family: $font_family;
+  -webkit-font-smoothing: antialiased;
+  font-size: 10px;
+  line-height: normal;
+  background-color: $bg_gray;
+  min-height: 400px;
+  min-width: 320px;
+  color: $color_text;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+input,button,textarea,select{
+  font-family:$font_family;
+  font-size: 14px;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+}
+img{
+  vertical-align: top;
+  max-width: 100%;
+}
+a{
+  cursor: pointer;
+  color: $color_blue_1;
+  text-decoration: none;
+  @include web_transition(all .2s ease-in-out);
+}
+.under a, a.under{
+  text-decoration: underline;
+}
+.under a:hover, a.under:hover{
+  text-decoration: none;
+}
+b, .bold{
+  font-weight: bold;
+}
+i,.italic{
+  font-style: italic;
+}
+.upper{
+  text-transform: uppercase;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
+h1, .h1{
+  font-size: 9.6em;
+}
+h2, .h2{
+  font-size: 5em;
+}
+h3, .h3{
+  font-size: 3.5em;
+}
+h4, .h4{
+  font-size: 2.8em;
+}
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4{
+  font-family: $font_family_title;
+  line-height: 1.1;
+}
+.dotted{
+  border-bottom: 1px dotted;
+}
+.dashed{
+  border-bottom: 1px dashed;
+}
+.super{
+  vertical-align: super;
+  font-size: 11px;
+}
+.caret{
+  color: inherit;
+  border-top: 5px solid;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  display:inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 0;
+}
+.box-inline{
+  display: inline-block;
+  vertical-align: top;
+}
+.btn{
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  background:none;
+  cursor: pointer;
+  @include web_transition(all 0.2s ease-in-out);
+}
+.container{
+  max-width: 1820px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 6em;
+  padding-right: 6em;
+}
+/*colors*/
+.grey{
+  color: $color_gray_1;
+}
+.black{
+  color: $color_black;
+}
+.white{
+  color: $color_white;
+}
+.blue{
+  color: $color_blue_1;
+}
+.red{
+  color: $color_red_1;
+}
+.yellow{
+  color: $color_yellow_1;
+}
+.green{
+  color: $color_green_1;
+}
+
+/*CONTENT*/
+html,
+body{
+  position: relative;
+}
+.wrapper{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.main{
+  height: 100%;
+}
+.text{
+  font-size: 2em;
+  line-height: 1.75em;
+  font-family: $font_family_light;
+  p{
+    &:not(:last-child){
+      margin-bottom: 1em;
+    }
+  }
+}
+.lists-decimal{
+  list-style: decimal;
+  padding: 0 20px;
+}
+.lists-disc{
+  list-style: disc;
+  padding: 0 20px;
+}

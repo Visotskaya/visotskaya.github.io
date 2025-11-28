@@ -1,0 +1,30 @@
+<section class="section section-blog">
+    {% include "blocks/blog/_blog-cat-dropdown.html" %}
+    <div class="container">
+        <div class="section-blog-content_right">
+            <div class="section-blog-content_title">
+                <h2>Search results for «Mark»</h2>
+                {% include "blocks/blog/_blog-filter.html" %}
+            </div>
+
+            <div class="section-blog-search_result">
+                <div class="section-blog-search_result_form">
+                    <form class="form" action="">
+                        <div class="form-group">
+                            <div class="form-control-btn right"><a class="link" href="blog-search.html"><i class="icon icon-search"></i></a></div>
+                            <input type="text" class="form-control" value="Mark" autofocus/>
+                        </div>
+                    </form>
+                </div>
+                {% include "blocks/blog/_blog-item-search.html" %}
+                {% include "blocks/blog/_blog-item-search.html" %}
+            </div>
+        </div>
+        <div class="section-blog-content_left">
+            {% include "blocks/blog/_blog-cat.html" %}
+            {% include "blocks/blog/_blog-tags.html" %}
+            {% include "blocks/blog/_blog-subscribe.html" %}
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="153px" height="141px" viewBox="0 0 153 141" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>17E91348-855D-4EFF-892B-9787E780EDE4</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <pattern id="pattern-1" width="8" height="8" x="13" y="-8" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-2"></use>
+        </pattern>
+        <image id="image-2" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAA1teXP8meAAAACdJREFUGBlj/P//PwM+wIRPEiRHmgJ23/2HQRjZVGwmMCIrYKS9IwFZGgm2wsR73AAAAABJRU5ErkJggg=="></image>
+    </defs>
+    <g id="icons/management" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -3.000000)">
+        <g id="Management">
+            <path d="M45.2918874,119.5 L74.5,90.5743643 L74.5,68.5 L2.5,68.5 L2.5,119.5 L45.2918874,119.5 Z" id="Rectangle-4-Copy-6" stroke="#064CBE" stroke-width="5"></path>
+            <rect id="Rectangle-4-Copy-5" stroke="#064CBE" stroke-width="5" x="27.5" y="53.5" width="23" height="14"></rect>
+            <path d="M63.6056338,25.5633803 L63.6056338,0 L111.323944,0 L111.323944,25.5633803 L152.225352,25.5633803 L152,121 L99.9402509,121 L21,121 L21,25.5633803 L63.6056338,25.5633803 Z" id="Combined-Shape" fill="url(#pattern-1)" opacity="0.5"></path>
+            <circle id="Эллипс_7_копия_3" stroke="#064CBE" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" cx="71.5" cy="116.5" r="15.5"></circle>
+            <path d="M84,127 L99,142" id="Path-10" stroke="#064CBE" stroke-width="5"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="136px" height="141px" viewBox="0 0 136 141" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>3EDC7D67-D587-4CFE-AFD0-FA7633768F11</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <pattern id="pattern-1" width="8" height="8" x="16" y="85" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-2"></use>
+        </pattern>
+        <image id="image-2" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAA1teXP8meAAAACdJREFUGBlj/P//PwM+wIRPEiRHmgJ23/2HQRjZVGwmMCIrYKS9IwFZGgm2wsR73AAAAABJRU5ErkJggg=="></image>
+        <pattern id="pattern-3" width="8" height="8" x="37" y="-8" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-4"></use>
+        </pattern>
+        <image id="image-4" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAA1teXP8meAAAACdJREFUGBlj/P//PwM+wIRPEiRHmgJ23/2HQRjZVGwmMCIrYKS9IwFZGgm2wsR73AAAAABJRU5ErkJggg=="></image>
+    </defs>
+    <g id="icons/p2p" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(3.000000, -3.000000)">
+        <g id="p2p-ico">
+            <path d="M0,141 C0,99.6843476 69,102.337646 69,141" id="Эллипс_7_копия_2" stroke="#064CBE" stroke-width="5" stroke-linecap="square" stroke-linejoin="round"></path>
+            <circle id="Эллипс_7_копия_3" stroke="#064CBE" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" cx="35" cy="75" r="22"></circle>
+            <path d="M24,141 C24,74.8949561 135,79.1402342 135,141" id="Эллипс_7_копия_2-Copy" fill="url(#pattern-1)" opacity="0.5"></path>
+            <circle id="Эллипс_7_копия_3-Copy" fill="url(#pattern-3)" opacity="0.5" cx="80" cy="35" r="35"></circle>
+        </g>
+    </g>
+</svg>

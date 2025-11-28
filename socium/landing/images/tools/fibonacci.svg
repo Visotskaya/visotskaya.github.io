@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="41px" viewBox="0 0 65 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>BC7764C2-A17B-4826-B28A-67C9DCE1705A</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="icons/fibonacci" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -1.000000)">
+        <g id="Fibonacci-ico" transform="translate(0.000000, 5.000000)" stroke="#FFFFFF">
+            <path d="M65,1 L0,1" id="Path-9-Copy" stroke-width="3"></path>
+            <path d="M65,17 L0,17" id="Path-9-Copy-8" stroke-width="3"></path>
+            <path d="M65,32 L0,32" id="Path-9-Copy-9" stroke-width="3"></path>
+            <path d="M7,32 L17.5,32" id="Path-9-Copy-11" stroke-width="10"></path>
+            <path d="M46,1 L56.5,1" id="Path-9-Copy-7" stroke-width="10"></path>
+            <path d="M27,17 L37.5,17" id="Path-9-Copy-10" stroke-width="10"></path>
+        </g>
+    </g>
+</svg>

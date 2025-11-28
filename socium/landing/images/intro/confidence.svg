@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>confidence</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icons/confidence" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ресурс-4" transform="translate(27.000000, 19.000000)">
+            <polygon id="Path" stroke="#CFDCF3" stroke-dasharray="5" points="0 27.9975947 0 84.0024053 48.495189 112 97 84.0024053 97 27.9975947 48.495189 0"></polygon>
+            <polygon id="Shape" stroke="#054CBE" stroke-width="1.5" fill-rule="nonzero" points="8.27859296 32.576 8.27859296 79.144 48.5479397 102.424 88.8252764 79.144 88.8252764 32.576 48.5479397 9.296"></polygon>
+            <path d="M18.4737688,85.032 L48.5479397,102.4 L78.6301005,85.008 C82.8812239,79.0211808 86.3177673,72.4945652 88.8492462,65.6 L88.8492462,32.576 L48.5479397,9.296 L8.27859296,32.576 L8.27859296,65.6 C10.8007287,72.5016096 14.2292334,79.0363379 18.4737688,85.032 Z" id="Shape" fill-opacity="0.2" fill="#054CBE" fill-rule="nonzero"></path>
+            <path d="M48.5479397,9.032 C35.446863,16.4900127 20.9898336,21.2525269 6.02542714,23.04 C6.02542714,71.04 24.1945729,90.92 48.5479397,106.712 C72.9092965,90.92 91.0704523,71.064 91.0704523,23.04 C76.1060458,21.2525269 61.6490164,16.4900127 48.5479397,9.032 Z" id="Shape" stroke="#054CBE" stroke-width="1.5" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <path d="M48.7556784,17.848 L48.5878894,17.944 L48.5878894,96.608 L48.7556784,96.72 C68.4269347,83.968 83.1124623,67.92 83.1124623,29.16 C71.0217497,27.7194152 59.3406284,23.8733962 48.7556784,17.848 Z" id="Shape" fill-opacity="0.1" fill="#054CBE" fill-rule="nonzero"></path>
+            <path d="M48.4520603,96.6 L48.2842714,96.712 C28.6130151,83.96 13.9274874,67.912 13.9274874,29.152 C26.0176307,27.7138886 37.6987198,23.8706001 48.2842714,17.848 L48.4520603,17.944" id="Shape" stroke="#054CBE" stroke-width="0.799999952" opacity="0.5"></path>
+            <path d="M48.5479397,13.808 L48.5479397,101.728" id="Shape" stroke="#054CBE" stroke-width="0.599999964" opacity="0.3"></path>
+            <polygon id="Shape" fill-opacity="0.2" fill="#054CBE" fill-rule="nonzero" points="45.4078894 68.24 35.2526633 58.072 28.2934171 65.04 45.4078894 82.176 45.4078894 82.176 72.4298995 55.12 65.4706533 48.152"></polygon>
+            <polygon id="Shape" stroke="#054CBE" stroke-width="1.5" fill="#FFFFFF" fill-rule="nonzero" points="45.4078894 62.208 35.2526633 52.04 28.2934171 59.008 45.4078894 76.144 45.4078894 76.144 72.4298995 49.088 65.4706533 42.12"></polygon>
+            <ellipse id="Oval" stroke="#054CBE" stroke-width="1.5" cx="48.5878894" cy="46.824" rx="1.97351759" ry="1.976"></ellipse>
+            <ellipse id="Oval" stroke="#054CBE" stroke-width="1.5" cx="55.8347739" cy="40.896" rx="1.97351759" ry="1.976"></ellipse>
+            <ellipse id="Oval" stroke="#054CBE" stroke-width="1.5" cx="43.6501005" cy="31.992" rx="1.97351759" ry="1.976"></ellipse>
+            <polyline id="Shape" stroke="#054CBE" stroke-width="1.5" points="52.8705025 11.392 52.8705025 24.08 55.8507538 27.064 55.8507538 39.008"></polyline>
+            <polyline id="Shape" stroke="#054CBE" stroke-width="1.5" points="48.5878894 44.848 48.5878894 38.248 51.4962312 34.96 51.4962312 30.016 48.5878894 26.552 48.5878894 9.032"></polyline>
+            <polyline id="Shape" stroke="#054CBE" stroke-width="1.5" points="43.6501005 30.016 43.6501005 22.104 48.5479397 17.192"></polyline>
+            <polyline id="Shape" stroke="#054CBE" stroke-width="0.599999964" opacity="0.3" points="69.010201 45.664 45.5357286 69.168 31.8409548 55.456"></polyline>
+            <polygon id="Shape" fill-opacity="0.2" fill="#054CBE" fill-rule="nonzero" points="45.5357286 69.168 45.4078894 76.144 28.2934171 59.008 31.8409548 55.456"></polygon>
+        </g>
+    </g>
+</svg>

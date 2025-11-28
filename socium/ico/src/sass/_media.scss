@@ -1,0 +1,235 @@
+@media(max-width: 1300px) {
+  .h1, .h2, h1, h2 {
+    font-size: 50px;
+  }
+
+}
+@media(min-width: 1170px) {
+  .navbar-collapse{
+    display: block!important;
+  }
+}
+@media(max-width: 1169px) {
+  .h3,h3{
+    font-size: 40px;
+  }
+  .container{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  header{
+    .logo{
+      margin-right: 30px;
+    }
+    .header{
+      &-sub-navigate{
+        display: none;
+      }
+      &-mobile-navigate{
+        display: block;
+      }
+    }
+    .navbar-collapse{
+      position: fixed;
+      width: 100%;
+      height: 1000px;
+      background: $color_bg_3;
+      color: $color_white;
+      top: 0;
+      left: 0;
+      text-align: center;
+      padding-bottom:30px;
+      display: none;
+      z-index: 5;
+      .logo{
+        padding: 18px 30px;
+        margin: 0;
+        text-align: left;
+      }
+      .nav{
+        a{
+          color: $color_white;
+          margin: 15px 0;
+          font-size: 18px;
+          text-transform: none;
+        }
+        li{
+          display: block;
+          margin-left: 0;
+        }
+        &-dropdown{
+          margin: 50px 0 20px;
+          li{
+            a{
+              font-size: 11px;
+              text-transform: uppercase;
+              margin: 10px 0;
+              &:after{
+                border-top: .3em solid transparent;
+                border-bottom: .3em solid transparent;
+                border-left: .3em solid;
+                vertical-align: 0.15em;
+                margin-left: 0.75em;
+              }
+            }
+          }
+          .dropdown{
+            display: inline-block;
+            vertical-align: top;
+            .menu-dropdown{
+              a{
+                color: $color-text;
+                margin: 0;
+              }
+            }
+          }
+        }
+        &-social-scroll{
+          position: relative;
+          left:0;
+          bottom: 0;
+          margin-top: 30px;
+          a{
+            color: $color_white;
+          }
+        }
+      }
+    }
+  }
+  .section{
+    &-name{
+      padding-top: 1em;
+      &:after{
+        top:0;
+        left:35px;
+      }
+      &:before{
+        top:-5px;
+        left:0;
+      }
+      &.no-number{
+        &:after{
+          display: none;
+        }
+      }
+      &-bg{
+        font-size: 205px;
+      }
+    }
+  }
+}
+@media(min-width: 1025px) {
+  .hide-desktop {
+    display: none;
+  }
+}
+
+@media(max-width: 1024px) {
+  .hide-tablet {
+    display: none;
+  }
+  .section{
+    &-name{
+      &-bg{
+        font-size: 148px;
+      }
+    }
+  }
+}
+@media(max-width: 860px) {
+  .cursor-scroll{
+    display: none;
+  }
+  .section{
+    &-team{
+      &-item{
+        height: 340px;
+        width:45%;
+      }
+      .image{
+        height: 176px;
+      }
+      .text{
+        font-size: 14px;
+      }
+    }
+    &-timer{
+      font-size: 90px;
+    }
+    &-intro{
+      padding-bottom: 60px;
+      &-earth{
+        .earth{
+          @include web_transform(scale(0.75));
+          margin-top: 15%;
+        }
+        &.transform{
+          .earth{
+            @include web_transform(scale(0.75));
+          }
+        }
+      }
+    }
+    &-statistics{
+      &-info{
+        &-item{
+          width: 33%;
+          min-width: 33%;
+        }
+      }
+    }
+  }
+}
+@media(min-width: 769px) {
+  .show-mobile {
+    display: none !important;
+  }
+}
+
+@media(max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+  h1,.h1{
+    font-size: 35px;
+  }
+  header{
+    padding: 7px 15px;
+    .logo{
+      margin: 0;
+      img{
+        height: 35px;
+        width: 140px;
+      }
+    }
+    .btn-menu{
+      margin: -15px;
+    }
+    &~.main{
+      padding-top: 42px;
+    }
+  }
+
+  .section{
+    &-timer{
+      font-size: 55px;
+    }
+    &-team{
+      .wrap{
+        display: block;
+        white-space: nowrap;
+        max-width: 100%;
+        overflow-y: visible;
+        overflow-x: auto;
+      }
+      &-item{
+        width: 253px;
+        display: inline-block;
+        vertical-align: top;
+        white-space: normal;
+        margin-bottom: 0;
+      }
+
+    }
+  }
+}

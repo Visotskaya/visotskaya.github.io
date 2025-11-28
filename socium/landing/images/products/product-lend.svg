@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>20018ECD-4BA9-478D-9B31-250F4F25F894</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="icon/products/lend" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval-5" fill="#064CBE" cx="48.5" cy="43.5" r="3.5"></circle>
+        <polyline id="Path-29" stroke="#064CBE" stroke-width="4" points="2 51 49 25 94.5054052 50.4958947"></polyline>
+        <path d="M8,59 L88,59" id="Path-30" stroke="#064CBE" stroke-width="4"></path>
+        <path d="M8,107 L88,107" id="Path-30-Copy-2" stroke="#064CBE" stroke-width="4"></path>
+        <path d="M3,113 L93,113" id="Path-30-Copy-3" stroke="#064CBE" stroke-width="4"></path>
+        <rect id="Rectangle" stroke="#064CBE" stroke-width="4" x="24" y="69" width="8" height="29"></rect>
+        <rect id="Rectangle-Copy" stroke="#064CBE" stroke-width="4" x="44" y="69" width="8" height="29"></rect>
+        <rect id="Rectangle-Copy-2" stroke="#064CBE" stroke-width="4" x="64" y="69" width="8" height="29"></rect>
+        <path d="M12,101 L8,101 L8,97 L12,97 L12,101 Z M12,93 L8,93 L8,89 L12,89 L12,93 Z M12,85 L8,85 L8,81 L12,81 L12,85 Z M12,77 L8,77 L8,73 L12,73 L12,77 Z M12,69 L8,69 L8,65 L12,65 L12,69 Z M12,61 L8,61 L8,57 L12,57 L12,61 Z M8,57 L12,57 L12,61 L8,61 L8,57 Z M8,65 L12,65 L12,69 L8,69 L8,65 Z M8,73 L12,73 L12,77 L8,77 L8,73 Z M8,81 L12,81 L12,85 L8,85 L8,81 Z M8,89 L12,89 L12,93 L8,93 L8,89 Z M8,97 L12,97 L12,101 L8,101 L8,97 Z" id="Polygon-2" fill="#064CBE" fill-rule="nonzero" opacity="0.200000003"></path>
+        <path d="M88,101 L84,101 L84,97 L88,97 L88,101 Z M88,93 L84,93 L84,89 L88,89 L88,93 Z M88,85 L84,85 L84,81 L88,81 L88,85 Z M88,77 L84,77 L84,73 L88,73 L88,77 Z M88,69 L84,69 L84,65 L88,65 L88,69 Z M88,61 L84,61 L84,57 L88,57 L88,61 Z M84,57 L88,57 L88,61 L84,61 L84,57 Z M84,65 L88,65 L88,69 L84,69 L84,65 Z M84,73 L88,73 L88,77 L84,77 L84,73 Z M84,81 L88,81 L88,85 L84,85 L84,81 Z M84,89 L88,89 L88,93 L84,93 L84,89 Z M84,97 L88,97 L88,101 L84,101 L84,97 Z" id="Polygon-2-Copy-2" fill="#064CBE" fill-rule="nonzero" opacity="0.200000003"></path>
+    </g>
+</svg>

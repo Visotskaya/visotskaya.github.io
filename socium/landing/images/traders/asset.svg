@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>5B7AF198-FDFA-438F-BAF6-78D7DF57CFBB</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="icon/trade/asset" stroke-width="2">
+            <path d="M7,12 C7,13.849852 7,15.0165186 7,15.5 C7,17.4329966 11.4771525,19 17,19 C22.5228475,19 27,17.4329966 27,15.5 C27,15.0035975 27,13.6702641 27,11.5" id="Oval-6-Copy" stroke="#B4C9EB"></path>
+            <path d="M7,15 C7,17.5441465 7,19.0441465 7,19.5 C7,21.4329966 11.4771525,23 17,23 C22.5228475,23 27,21.4329966 27,19.5 C27,19.0153494 27,17.6820161 27,15.5" id="Oval-6-Copy-2" stroke="#B4C9EB"></path>
+            <path d="M7,19.5 C7,21.7030706 7,23.0364039 7,23.5 C7,25.4329966 11.4771525,27 17,27 C22.5228475,27 27,25.4329966 27,23.5 C27,23.0525863 27,21.719253 27,19.5" id="Oval-6-Copy-3" stroke="#B4C9EB"></path>
+            <ellipse id="Oval-6" stroke="#FFFFFF" cx="17" cy="11.5" rx="10" ry="3.5"></ellipse>
+        </g>
+    </g>
+</svg>

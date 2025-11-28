@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="61px" height="69px" viewBox="0 0 61 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>subscribe-success</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icons/subscribe-success" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Polygon-2" stroke="#064CBE" stroke-width="4" points="30 2 57.7128129 18 57.7128129 50 30 66 2.28718708 50 2.28718708 18"></polygon>
+        <polyline id="Path-18" stroke="#064CBE" stroke-width="4" transform="translate(30.500000, 31.000000) rotate(-45.000000) translate(-30.500000, -31.000000) " points="22 26 22 36 39 36"></polyline>
+    </g>
+</svg>

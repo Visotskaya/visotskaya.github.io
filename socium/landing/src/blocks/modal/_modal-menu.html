@@ -1,0 +1,34 @@
+<div class="modal fade" tabindex="-1" role="dialog" id="menu">
+    <div class="modal-menu" role="document">
+        <div class="modal-menu-content">
+            <div class="modal-menu-form">
+                <div class="section-text">
+                    <div class="image"><img src="images/email.svg" alt=""></div>
+                    <div class="title"><h2>Get the latest news!</h2></div>
+                    <div class="text">
+                        We will let you know when we are ready to launch,
+                        so that you can be among the first to reap the benefits!
+                    </div>
+                </div>
+                {% include "blocks/subscribe/_form.html" %}
+            </div>
+            <div class="modal-menu-links">
+                {% include "blocks/navigate/_nav.html" %}
+                <div class="modal-menu-links-subscribe">
+                    <a data-toggle="modal" data-target="#subscribe" data-dismiss="modal" class="btn btn-border"><span class="border"></span>Subscribe<span class="border"></span></a>
+                </div>
+                 <div class="modal-menu-links-follow">
+                     Follow us&nbsp;&nbsp;&mdash;
+                     <a class="link"><i class="icon icon-social icon-social-fb"></i></a>
+                     <a class="link"><i class="icon icon-social icon-social-tw"></i></a>
+                     <a class="link"><i class="icon icon-social icon-social-li"></i></a>
+                     <a class="link"><i class="icon icon-social icon-social-tel"></i></a>
+                     <a class="link"><i class="icon icon-social icon-social-md"></i></a>
+                     <a class="link"><i class="icon icon-social icon-social-bt"></i></a>
+                     <a class="link"><i class="icon icon-social icon-social-gh"></i></a>
+                     <a class="link"><i class="icon icon-social icon-social-rt"></i></a>
+                 </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

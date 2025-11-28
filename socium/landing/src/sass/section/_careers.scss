@@ -1,0 +1,152 @@
+.section-careers{
+  padding: 6em 0 9em;
+  &-list{
+    margin-top: 4em;
+    margin-bottom: 8em;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &_item{
+      background: $color_white;
+      margin-top: 2em;
+      font-weight: bold;
+      padding: 4.5em 3.5em 4.5em 5.5em;
+      @include block_flex;
+      @include flex_justify_between;
+      @include flex_align_item_center;
+      color: $color_black;
+      .town{
+        font-size: 16px;
+        font-weight: normal;
+        color: $color_text;
+      }
+      .icon-next{
+        margin-left: 2em;
+      }
+    }
+  }
+
+  &-position{
+    margin-bottom: 6em;
+    .container{
+      @include block_flex;
+      padding-left: 1em;
+    }
+    &-content{
+      &_left{
+        width: 66.66%;
+        background: $color_white;
+        padding: 6.5em 5em 4em;
+        overflow: hidden;
+      }
+      &_right{
+        width: 33.33%;
+        padding-top:6em;
+        padding-left: 6em;
+        padding-bottom: 2em;
+        h4{
+          font-weight: bold;
+          margin-top: 2.5em;
+          margin-bottom: 0.5em;
+        }
+      }
+      &_text{
+        margin-bottom: 6em;
+        h2{
+          margin-bottom: 0.5em;
+        }
+        ul{
+          li{
+            position: relative;
+            padding-left: 15px;
+            &:after{
+              width: 6px;
+              height: 6px;
+              border-radius: 50%;
+              content: '';
+              left:0;
+              top:0.875em;
+              margin-top: -3px;
+              position: absolute;
+              background: $color_blue_1;
+            }
+          }
+        }
+      }
+      &_button{
+        @include block_flex;
+        @include flex_justify_between;
+        @include flex_align_item_center;
+      }
+      &_social{
+        a{
+          width: 24px;
+          height: 24px;
+          line-height: 24px;
+          border-radius: 50%;
+          margin: 0 2px;
+          display: inline-block;
+          vertical-align: top;
+          background: $color_blue_1;
+          color: $color_white;
+          text-align: center;
+        }
+      }
+    }
+    &-other{
+      padding: 1em 0 2em;
+      .town{
+        font-size: 12px;
+        margin-bottom: 0.5em;
+      }
+      .name{
+        font-size: 1.6em;
+        font-weight: bold;
+        color: $color_black;
+        font-family: $font_family_title;
+      }
+    }
+  }
+}
+@media(max-width: 940px) {
+  .section-careers{
+    padding-top: 4em;
+    padding-bottom: 3em;
+    h2{
+      font-size: 2.575em;
+    }
+    &-list{
+      margin-top: 3em;
+      margin-bottom: 5em;
+    }
+    &-list_item{
+      padding: 2.5em;
+      h4{
+        font-size: 2em;
+      }
+      .icon-plus{
+        width: 16px;
+        height: 16px;
+      }
+    }
+    &-position{
+      .container{
+        @include flex_wrap;
+        position: relative;
+        padding: 0;
+      }
+      &-content{
+        &_left,&_right{
+          width: 100%;
+          padding: 0;
+        }
+        &_left{
+          padding: 3em;
+        }
+        &_right{
+          padding: 3em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,374 @@
+.section-traders-includes{
+  background-color: #F3F4F9;
+  padding-top: 15em;
+  padding-bottom: 18em;
+  overflow: hidden;
+  &_text{
+    position: relative;
+    left:0;
+    width: 33%;
+    text-align: left;
+    padding-top: 6em;
+    padding-bottom: 12em;
+  }
+  &_info{
+    color: $color_white;
+    padding-left: 10em;
+    width: 60%;
+    left: 40%;
+    top: 15em;
+    position: absolute;
+    padding-top: 8em;
+    padding-bottom: 6em;
+    background: $color_blue_1;
+    &:before {
+      position: absolute;
+      bottom: -3.5em;
+      height: 23em;
+      width: 58em;
+      opacity: .3;
+      left: -10em;
+      background: url(../images/point-blue.png);
+      content: '';
+    }
+    .title{
+      color: $color_white;
+      padding-bottom: 5em;
+    }
+    &_box{
+      @include block_flex;
+      //@include flex_wrap;
+      @include flex_align_self_start;
+      &_item{
+        &:first-child{
+          max-width:55%;
+          width: 100%;
+          padding-right: 3em;
+        }
+        &:last-child{
+          max-width:45%;
+          width: 100%;
+          padding-right: 3em;
+        }
+        &_items{
+          position: relative;
+          padding-bottom: 2em;
+          .icon{
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+          .text{
+            padding-left: 3.5em;
+          }
+        }
+      }
+    }
+  }
+}
+.section-traders-management{
+  background-color: #F3F4F9;
+  .container{
+    @include block_flex();
+  }
+  &_img{
+    width: 40%;
+    position: relative;
+    img{
+      position: absolute;
+      right: 5em;
+      bottom: -10%;
+      z-index: 2;
+      height: 110%;
+      max-width: none;
+    }
+  }
+  &_text{
+    width: 60%;
+    padding-left: 12em;
+    padding-top: 4em;
+    padding-bottom: 8em;
+    .text{
+      max-width: 100%;
+    }
+  }
+}
+.section-traders-smart-contracts{
+  padding-top: 18em;
+  padding-bottom: 12em;
+  background: $color_white;
+  &.section{
+    position: static;
+  }
+  .container{
+    @include block_flex();
+  }
+  &_name{
+    .title{
+      padding-right: 7em;
+    }
+    width: 55%;
+    padding-right: 15em;
+    &_border{
+      width: 100%;
+      height: 11em;
+      background: $color_blue_1;
+      margin-top: 5.5em;
+      position: relative;
+      &:after{
+        content: '';
+        position: absolute;
+        background: $color_blue_1;
+        width: 100%;
+        height: 100%;
+        right: 100%;
+        top: 0;
+      }
+      &:before{
+        content: '';
+        position: absolute;
+        background-size: contain;
+        bottom: 5.4em;
+        right: -8.2em;
+        width: 18em;
+        height: 24.5em;
+        background-image: url(../images/traders/smart_contracts.svg);
+
+      }
+    }
+  }
+  &_text{
+    width: 45%;
+    padding-left: 8em;
+    .text{
+      max-width: 100%;
+    }
+  }
+}
+.section-traders-profiles{
+  background: $color_white;
+  padding-bottom: 15em;
+  overflow: hidden;
+.container{
+  @include block_flex();
+  padding-top: 8em;
+  padding-bottom: 8em;
+}
+  &_name{
+    width: 50%;
+    padding-left: 10em;
+    padding-right: 7em;
+    position: relative;
+    &:before {
+      position: absolute;
+      left: 5em;
+      top: -8em;
+      height: 23em;
+      width: 17em;
+      opacity: .3;
+      background: url(../images/point-blue.png);
+      content: '';
+    }
+  }
+  &_img{
+    width: 50%;
+    padding-left: 5em;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+  }
+}
+.section-traders-capital{
+  .container{
+    @include block_flex();
+  }
+  &_img{
+    width: 40%;
+    position: relative;
+    img{
+      position: absolute;
+      right: 5em;
+      bottom:0;
+      height: 100%;
+      max-width: none;
+    }
+    &:before {
+      position: absolute;
+      right: -5em;
+      top: -8.4em;
+      height: 23em;
+      width: 80%;
+      opacity: .3;
+      background: url(../images/point-blue.png);
+      content: '';
+    }
+  }
+  &_text{
+    width: 60%;
+    padding-left: 12em;
+    padding-top: 18.6em;
+    padding-bottom: 8em;
+    .text{
+      max-width: 100%;
+    }
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 60px;
+    width: 100%;
+    z-index: -1;
+    background: #ffffff;
+  }
+}
+.section-traders-consortium{
+  padding-top: 20em;
+  padding-bottom: 20em;
+  background: $color_white;
+  .container{
+    @include block_flex();
+  }
+&_name{
+  background: $color_blue_1;
+  width: 55%;
+  color: $color_white;
+  padding-top: 8em;
+  padding-bottom: 8em;
+  position: relative;
+  &:after{
+    content: '';
+    position: absolute;
+    background: $color_blue_1;
+    width: 100%;
+    height: 100%;
+    right: 100%;
+    top: 0;
+  }
+  .fraze {
+    border-color: #fff!important;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+  }
+}
+  &_text{
+    width: 45%;
+    padding-left: 10em;
+  }
+}
+.section-traders-functionality{
+  padding-top: 18.6em;
+  padding-bottom: 8em;
+  position: relative;
+  overflow: hidden;
+  &:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 6em;
+    width: 100%;
+    z-index: -1;
+    background: #ffffff;
+  }
+  .container{
+    @include block_flex();
+  }
+  &_name{
+    padding-left: 7em;
+    padding-right: 7em;
+    width: 50%;
+    &:before {
+      position: absolute;
+      left: 5em;
+      top: -8em;
+      height: 23em;
+      width: 17em;
+      opacity: .5;
+      background: url(../images/point-blue.png);
+      content: '';
+    }
+  }
+  &_img{
+    background: $color_blue_1;
+    width: 50%;
+    color: $color_white;
+    left: 50%;
+    top: 0;
+    height: 90%;
+    position: absolute;
+    overflow: hidden;
+    &_images{
+      padding: 8em 2em 1em 3em;
+      position: relative;
+      &:after{
+        width: 100%;
+        left:0;
+        height: 80%;
+        position: absolute;
+        bottom:0;
+        content: '';
+        @include bg_gradient_blue;
+      }
+      img{
+        max-width: 120%;
+      }
+    }
+  }
+}
+.icon-frendly {
+  width: 3.4em;
+  height: 3.4em;
+  background-image: url(../images/traders/frendly.svg);
+}
+.icon-analitics {
+  width: 3.4em;
+  height: 3.4em;
+  background-image: url(../images/traders/analitics.svg);
+}
+.icon-INVESTORS {
+  width: 3.4em;
+  height: 3.4em;
+  background-image: url(../images/traders/INVESTORS.svg);
+}
+.icon-INVESTORS1 {
+  width: 3.4em;
+  height: 3.4em;
+  background-image: url(../images/traders/INVESTORS1.svg);
+}
+.icon-terms {
+  width: 3.4em;
+  height: 3.4em;
+  background-image: url(../images/traders/terms.svg);
+}
+.icon-reputation {
+  width: 3.4em;
+  height: 3.4em;
+  background-image: url(../images/traders/reputation.svg);
+}
+.icon-profit {
+  width: 3.4em;
+  height: 3.4em;
+  background-image: url(../images/traders/profit.svg);
+}
+.icon-liquidity {
+  width: 3.4em;
+  height: 3.4em;
+  background-image: url(../images/traders/liquidity.svg);
+}
+.icon-asset {
+  width: 3.4em;
+  height: 3.4em;
+  background-image: url(../images/traders/asset.svg);
+}
+.icon-consortiums {
+  width: 14.8em;
+  height: 15.7em;
+  background-image: url(../images/traders/consortiums.svg);
+}

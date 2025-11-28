@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>A0100616-51C8-4D78-B4BE-44C27BC1BB1C</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="icon/products/gift" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2-Copy-5" transform="translate(0.000000, 25.000000)" stroke="#064CBE" stroke-width="4">
+            <path d="M12,41 L12,90 L82,90 L82,41 L12,41 Z" id="Rectangle"></path>
+            <path d="M40,25 L40,90 L55,90 L55,25 L40,25 Z" id="Rectangle-3"></path>
+            <path d="M2,25 L2,41 L91,41 L91,25 L2,25 Z" id="Rectangle-2"></path>
+            <path d="M46.294101,24.7939713 C41.8642989,11.3538122 37.2524846,3.96795707 32.9167881,2.6461965 C25.6209928,0.42203379 20,3.95632448 20,11.0522511 C20,18.7679255 26.0571028,25 33.5,25 C38.1238134,25 42.3886862,24.9312823 46.294101,24.7939713 Z" id="Oval-2"></path>
+            <path d="M73.294101,24.7939713 C68.8642989,11.3538122 64.2524846,3.96795707 59.9167881,2.6461965 C52.6209928,0.42203379 47,3.95632448 47,11.0522511 C47,18.7679255 53.0571028,25 60.5,25 C65.1238134,25 69.3886862,24.9312823 73.294101,24.7939713 Z" id="Oval-2-Copy" transform="translate(60.500000, 13.500000) scale(-1, 1) translate(-60.500000, -13.500000) "></path>
+        </g>
+    </g>
+</svg>

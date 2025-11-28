@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="157px" height="141px" viewBox="0 0 157 141" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>9E58751C-36C7-4A54-B89D-C70CA51D486F</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <pattern id="pattern-1" width="8" height="8" x="-3" y="-8" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-2"></use>
+        </pattern>
+        <image id="image-2" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAA1teXP8meAAAACdJREFUGBlj/P//PwM+wIRPEiRHmgJ23/2HQRjZVGwmMCIrYKS9IwFZGgm2wsR73AAAAABJRU5ErkJggg=="></image>
+    </defs>
+    <g id="icons/consorcium" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-2.000000, -3.000000)">
+        <g id="Consorcium" transform="translate(5.000000, 0.000000)">
+            <path d="M91.0066823,72.7578947 C91.3666504,66.2422329 106.224282,61 124.5,61 C142.062666,61 156.468765,65.8411473 157.885633,72.0012938 L158,72 L158,118.740824 C158,125.51138 143.001539,131 124.5,131 C105.998461,131 91,125.51138 91,118.740824 L91,72.7579703 Z M73.9922544,104 L74,104 C74,110.627417 58.5538239,116 39.5,116 C20.4461761,116 5,110.627417 5,104 L5.00774562,104 C5.00259044,103.912736 5,103.825247 5,103.737544 L5,11.7581732 C5.37727751,5.2423417 20.6785429,0 39.5,0 C57.586925,0 72.423057,4.84114751 73.8822196,11.0012942 L74,11 L74,103.737544 C74,103.825247 73.9974096,103.912736 73.9922544,104 Z" id="Combined-Shape" fill="url(#pattern-1)" opacity="0.5"></path>
+            <g id="Group-7" transform="translate(0.000000, 55.000000)" stroke="#064CBE" stroke-width="5">
+                <ellipse id="Эллипс_7_копия_3" stroke-linecap="round" stroke-linejoin="round" cx="22.5" cy="8" rx="22.5" ry="8"></ellipse>
+                <path d="M0,7.99285751 L0,68 C0,72.418278 10.0735931,76 22.5,76 C34.9264069,76 45,72.418278 45,68 L45,7.49822697" id="Эллипс_7_копия_3-Copy-2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M0,18 C0,22.418278 10.0735931,26 22.5,26 C34.9264069,26 45,22.418278 45,18" id="Эллипс_7_копия_3-Copy-3"></path>
+                <path d="M0,28 C0,32.418278 10.0735931,36 22.5,36 C34.9264069,36 45,32.418278 45,28" id="Эллипс_7_копия_3-Copy-4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M0,38 C0,42.418278 10.0735931,46 22.5,46 C34.9264069,46 45,42.418278 45,38" id="Эллипс_7_копия_3-Copy-5"></path>
+                <path d="M0,48 C0,52.418278 10.0735931,56 22.5,56 C34.9264069,56 45,52.418278 45,48" id="Эллипс_7_копия_3-Copy-6" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M0,58 C0,62.418278 10.0735931,66 22.5,66 C34.9264069,66 45,62.418278 45,58" id="Эллипс_7_копия_3-Copy-7"></path>
+                <path d="M0,68 C0,72.418278 10.0735931,76 22.5,76 C34.9264069,76 45,72.418278 45,68" id="Эллипс_7_копия_3-Copy-8" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            <g id="Group-7-Copy" transform="translate(55.000000, 95.000000)" stroke="#064CBE" stroke-linecap="round" stroke-linejoin="round" stroke-width="5">
+                <ellipse id="Эллипс_7_копия_3" cx="22.5" cy="8" rx="22.5" ry="8"></ellipse>
+                <path d="M0,7.99285751 L0,38 C0,42.418278 10.0735931,46 22.5,46 C34.9264069,46 45,42.418278 45,38 L45,7.49822697" id="Эллипс_7_копия_3-Copy-2"></path>
+                <path d="M0,8 C0,12.418278 10.0735931,16 22.5,16 C34.9264069,16 45,12.418278 45,8" id="Эллипс_7_копия_3-Copy-6"></path>
+                <path d="M0,18 C0,22.418278 10.0735931,26 22.5,26 C34.9264069,26 45,22.418278 45,18" id="Эллипс_7_копия_3-Copy-7"></path>
+                <path d="M0,28 C0,32.418278 10.0735931,36 22.5,36 C34.9264069,36 45,32.418278 45,28" id="Эллипс_7_копия_3-Copy-8"></path>
+            </g>
+        </g>
+    </g>
+</svg>

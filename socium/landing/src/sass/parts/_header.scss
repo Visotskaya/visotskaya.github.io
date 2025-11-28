@@ -1,0 +1,336 @@
+.header{
+  position: fixed;
+  width: 100%;
+  top:0;
+  left:0;
+  z-index: 100;
+  @include web_transition(top .2s linear);
+  padding-right: inherit;
+  .container{
+    @include block_flex;
+    @include flex_justify_between;
+    @include flex_align_item_center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+  &-logo{
+    width: 21em;
+    height: 4.8em!important;
+    display: inline-block;
+    vertical-align: top;
+    z-index: 2;
+    position: relative;
+    background: url("../images/logo-white.svg") no-repeat;
+    background-size: auto 100%;
+    position: relative!important;
+  }
+  &-nav{
+    @include block_flex;
+    @include flex_align_item_center;
+    li{
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 20px;
+      position: relative;
+      &.active{
+        a{
+          opacity: 1;
+        }
+      }
+      a{
+        font-size: 2em;
+        font-family: $font_family_bold;
+        color: $color_white;
+        opacity: 0.6;
+        &:hover{
+          opacity: 1;
+        }
+      }
+    }
+    .btn{
+      margin-left: 2em;
+      margin-right: 1em;
+    }
+    .nav-children{
+      position: absolute;
+      background: $color_white;
+      top:5em;
+      left:-30px;
+      color: $color_text;
+      white-space: nowrap;
+      font-size: 0.88em;
+      display: none;
+      &_item{
+        @include block_flex;
+      }
+      &:after{
+        color: $color_white;
+        border-bottom:9px solid;
+        border-right: 9px solid transparent;
+        border-left: 9px solid transparent;
+        width: 0;
+        height: 0;
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        margin-bottom: -1px;
+        left:50px;
+      }
+      .item{
+        min-width: 200px;
+        padding: 1.5em 0;
+        &:nth-child(even){
+          background: #EEF3FA;
+          a:hover{
+            background: rgba($color_blue_1,0.1);
+          }
+        }
+      }
+      a{
+        color: $color_text;
+        font-family: $font_family;
+        display: block;
+        font-weight: normal;
+        padding: 0.75em 2em;
+        &:hover{
+          background: $bg_gray;
+        }
+      }
+    }
+  }
+  &-menu{
+    font-size: 1.4em;
+    font-family: $font_family_bold;
+    text-transform: uppercase;
+    line-height: 12px;
+    padding: 0.7em 0;
+    border: 0;
+    @include block_flex;
+    color: $color_white;
+    z-index: 2;
+    .menu-bar{
+      margin-left: 14px;
+      width: 26px;
+      line-height: 3px;
+    }
+    .icon-bar{
+      height: 3px;
+      width: 100%;
+      background: $color_blue_1;
+      display: inline-block;
+      vertical-align: top;
+      @include web_transition(all .2s ease-in-out);
+      &+.icon-bar{
+        margin-top: 5px;
+      }
+    }
+    &:not(.open){
+      .name-open{
+        display: none;
+      }
+    }
+    &.open{
+      .name{
+        display: none;
+      }
+      .icon-bar{
+        &:first-child{
+          @include web_transform(translateY(2px) rotate(45deg));
+        }
+        &:last-child{
+          @include web_transform(translateY(-6px) rotate(-45deg));
+        }
+      }
+    }
+  }
+  .midnightHeader{
+    padding-right: inherit;
+  }
+  .midnightInner{
+    overflow: hidden!important;
+    padding-right: inherit;
+  }
+  .both,.dark{
+    .header{
+      &-logo{
+        background-image: url("../images/logo-dark.svg");
+      }
+      &-menu{
+        color: $color_text;
+        .icon-bar{
+          background: $color_blue_1;
+        }
+      }
+    }
+  }
+  .both{
+    .header{
+      &-menu{
+        color: $color_text;
+        .icon-bar{
+          background: $color_white;
+        }
+      }
+    }
+  }
+  &:not(.scroll){
+    .header{
+      &-menu{
+        display: none;
+      }
+      &-nav{
+        display: -ms-flexbox!important;
+        display: flex!important;
+      }
+    }
+
+  }
+  &.scroll{
+    top: 0!important;
+    @include box_shadow(0 2px 2px rgba(0, 0, 0, 0.1));
+    background: #fff;
+    .container{
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
+    .header-logo {
+      background: url(../images/logo-dark.svg) no-repeat;
+      background-size: auto 100%;
+    }
+    .header-menu{
+      .name,.name-open{
+        color: $color_black;
+      }
+      .menu-bar{
+
+      }
+    }
+    .header{
+      &-logo{
+        width: 14.5em;
+        height: 3.2em!important;
+      }
+      &-nav{
+        text-align: center;
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: $bg_footer;
+        top: 0;
+        left: 0;
+        padding-top: 12em;
+        ul{
+          margin-bottom: 2em;
+        }
+        li{
+          display: block;
+          line-height: 3em;
+          margin-bottom: 1em;
+        }
+      }
+    }
+  }
+}
+.menu-open{
+  .header{
+    z-index: 1060;
+  }
+}
+@media(max-width: 1720px) {
+  .header-nav li{
+    margin: 0 1em;
+  }
+}
+@media(max-width: 1440px) {
+  .header-nav li{
+    a{
+      font-size: 1.75em;
+    }
+  }
+}
+@media(max-width: 1020px) {
+  .header{
+    &-nav{
+      display: none!important;
+    }
+    &-menu{
+      @include block_flex;
+    }
+    &:not(.scroll){
+      .header{
+        &-nav{
+          display: none!important;
+        }
+        &-menu{
+          @include block_flex;
+        }
+      }
+    }
+  }
+}
+@media(min-width: 941px) {
+  .menu-open{
+    .header{
+      background: none;
+      box-shadow: none;
+      &-logo{
+        background-image: url(../images/logo-dark.svg);
+      }
+      &-menu{
+        color: $color_white!important;
+        .name-open{
+          color: $color_white!important;
+        }
+        .icon-bar{
+          background: $color_white!important;
+        }
+      }
+    }
+  }
+}
+@media(max-width: 940px) {
+  .header{
+    .container{
+      padding-top: 3em;
+      padding-bottom: 3em;
+    }
+    &-menu{
+      .name-open,
+      .name{
+        display: none!important;
+      }
+    }
+    &:not(.scroll){
+      height: 76px!important;
+    }
+    &.scroll{
+      background: $color_white;
+      height: 50px!important;
+      @include box_shadow(0 2px 2px rgba(0, 0, 0, 0.1));
+      .header{
+        &-logo{
+          font-size: 1.35em;
+          background-image: url(../images/logo-dark.svg);
+        }
+        &-menu{
+          .icon-bar{
+            background: $color_black!important;
+          }
+        }
+      }
+      .container{
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+      }
+    }
+  }
+  .menu-open{
+    .header{
+      &-logo{
+        background-image: url(../images/logo.svg);
+      }
+    }
+  }
+}

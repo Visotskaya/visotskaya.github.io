@@ -1,0 +1,94 @@
+.footer{
+  text-align: center;
+  background: $bg_footer;
+  color: $color_white;
+  padding: 8em 0 9em;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  &-logo{
+    width: 22.4em;
+    display: inline-block;
+    vertical-align: top;
+  }
+  &-nav{
+    margin-top: 3.5em;
+    font-size: 2em;
+    font-family: $font_family_bold;
+    li{
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 20px;
+    }
+    a{
+      color: $color_white;
+    }
+  }
+  &-copy{
+    font-size: 2em;
+    font-family: $font_family_light;
+    position: relative;
+    margin-top: 3.5em;
+    margin-bottom: 2em;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: top;
+    &:after{
+      left: 100%;
+    }
+    &:before{
+      right: 100%;
+    }
+    &:after,
+    &:before{
+      position: absolute;
+      content: '';
+      border-bottom: 1px solid $border_color_3;
+      width: 600px;
+      top:0.5em;
+      margin: 0 1.5em;
+    }
+  }
+  &-partner{
+    margin-bottom: 1.25em;
+    font-size: 1.8em;
+    opacity: 0.5;
+    &-image{
+      margin-bottom: 1em;
+    }
+    a{
+      color: $color_white;
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+  &-text{
+    font-size: 1.4em;
+    opacity: 0.5;
+    &.down{
+      opacity: 1;
+    }
+  }
+}
+@media(max-width: 940px) {
+  .footer{
+    padding: 5em 0;
+    &-nav{
+      display: none;
+    }
+    &-copy{
+      display: block;
+      margin: 1.5em 0 1em;
+      &:after,&:before{
+        display: none;
+      }
+    }
+    &-text{
+      &.down{
+        margin-top: 1em;
+      }
+    }
+  }
+}

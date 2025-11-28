@@ -1,0 +1,152 @@
+.icon{
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  &-left{
+    margin-right: 0.5em
+  }
+  &-right{
+    margin-left:0.5em;
+  }
+  &-middle{
+    vertical-align: middle;
+    margin-top: -2px;
+  }
+  &-grow{
+    background-image: url("../images/icon/growing.svg");
+    height: 22px;
+    width: 26px;
+  }
+  &-arrow-down{
+    height:7px;
+    width: 7px;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-left: 2px solid $color_white;
+    border-top: 2px solid $color_white;
+    @include web_transform(rotate(225deg));
+    border-radius: 2px;
+  }
+  &-triangle{
+    background-image: url("../images/icon/triangle.svg");
+    height: 17px;
+    width: 13px;
+    margin-left: 6px;
+  }
+  &-btc{
+    background-image: url("../images/icon/bitcoin.svg");
+  }
+  &-eth{
+    background-image: url("../images/icon/ethereum.svg");
+  }
+  &-ltc{
+    background-image: url("../images/icon/litecoin.svg");
+  }
+  &-xrp{
+    background-image: url("../images/icon/ripple.svg");
+  }
+  &-iota{
+    background-image: url("../images/icon/iota.svg");
+  }
+  &-xmr{
+    background-image: url("../images/icon/monero.svg");
+  }
+  &-dash{
+    background-image: url("../images/icon/dash.svg");
+  }
+  &-fb{
+    width: 3.9em;
+    height: 3.9em;
+    background-image: url("../images/icon/facebook.svg");
+  }
+  &-in{
+    width: 3.9em;
+    height: 3.9em;
+    background-image: url("../images/icon/linkedin.svg");
+  }
+  &-phone{
+    width: 35px;
+    height: 35px;
+    background-image: url("../images/icon/phone.svg");
+  }
+  &-email{
+    width: 35px;
+    height: 35px;
+    background-image: url("../images/icon/email.svg");
+  }
+  &-address{
+    width: 35px;
+    height: 35px;
+    background-image: url("../images/icon/address.svg");
+  }
+  &-bch{
+    background-image: url("../images/icon/bch.svg");
+  }
+  &-xlm{
+    background-image: url("../images/icon/xlm.svg");
+  }
+  &-miota{
+    background-image: url("../images/icon/miota.svg");
+  }
+  &-ada{
+    background-image: url("../images/icon/ada.svg");
+  }
+  &-eos{
+    background-image: url("../images/icon/eos.svg");
+  }
+  &-neo{
+    background-image: url("../images/icon/neo.svg");
+  }
+  &-search{
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/icon/search.svg");
+  }
+  &-plus{
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/icon/plus.svg");
+  }
+  &-next{
+    width: 12px;
+    height: 12px;
+    border-bottom: 2px solid $color_black;
+    border-right: 2px solid $color_black;
+    @include web_transform(rotate(-45deg));
+    transform-origin: 100% 50%;
+    -webkit-transform-origin: 100% 50%;
+  }
+  &-social{
+    width: 32px;
+    height: 33px;
+    &-fb{
+      background-image: url("../images/socialicons/facebook.svg");
+    }
+    &-tw{
+      background-image: url("../images/socialicons/twitter.svg");
+    }
+    &-li{
+      background-image: url("../images/socialicons/linkedin.svg");
+    }
+    &-tel{
+      background-image: url("../images/socialicons/telegram.svg");
+    }
+    &-md{
+      background-image: url("../images/socialicons/medium.svg");
+    }
+    &-bt{
+      background-image: url("../images/socialicons/bitcointalk.svg");
+    }
+    &-gh{
+      background-image: url("../images/socialicons/github.svg");
+    }
+    &-rt{
+      background-image: url("../images/socialicons/reddit.svg");
+    }
+  }
+}

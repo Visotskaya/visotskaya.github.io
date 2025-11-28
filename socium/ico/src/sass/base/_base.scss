@@ -1,0 +1,269 @@
+$font_family: 'GothamPro', Arial, Helvetica, sans-serif;
+$font_family-light: 'GothamPro-Light', Arial, Helvetica, sans-serif;
+$font_family-medium: 'GothamPro-Medium', Arial, Helvetica, sans-serif;
+$color_white: #ffffff;
+$color_black: #000000;
+$color_gray_1: #BEC7E0;
+$color_green_1: #78c214;
+$color_red_1: #ff1322;
+$color_yellow_1: #ffdd2b;
+$color_blue_1: #0688FB;
+$color_text:#8BA4BC;
+$color_title:#294598;
+$color_bg_1:#f3f9ff;
+$color_bg_2:#EEF0F7;
+$color_bg_3:#000020;
+$color_bg_4:#010525;
+
+$border_color_1:#F6F7FB;
+
+body{
+  font-family: $font_family;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  line-height: normal;
+  background-color: $color_white;
+  min-height: 400px;
+  min-width: 320px;
+  color: $color_text;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+input,button,textarea,select{
+  font-family:$font_family;
+  font-size: 14px;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+}
+img{
+  vertical-align: top;
+  max-width: 100%;
+}
+a{
+  cursor: pointer;
+  color: $color_blue_1;
+  text-decoration: none;
+  @include web_transition(all .2s ease-in-out);
+  &:hover{
+    color: $color_gray_1;
+  }
+}
+.under a, a.under{
+  text-decoration: underline;
+}
+.under a:hover, a.under:hover{
+  text-decoration: none;
+}
+b, .bold{
+  font-weight: bold;
+}
+i,.italic{
+  font-style: italic;
+}
+.upper{
+  text-transform: uppercase;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
+h1, .h1,h2, .h2,h3, .h3,h4, .h4{
+  color: $color_title;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  font-family: $font_family-light;
+}
+h1, .h1{
+  font-size: 60px;
+}
+h2, .h2{
+  font-size: 60px;
+}
+h3, .h3{
+  font-size: 50px;
+}
+h4, .h4{
+  font-size: 22px;
+}
+.dotted{
+  border-bottom: 1px dotted;
+}
+.dashed{
+  border-bottom: 1px dashed;
+}
+.super{
+  vertical-align: super;
+  font-size: 0.45em;
+}
+.caret{
+  color: inherit;
+  border-top: 5px solid;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  display: block;
+  width: 0;
+  height: 0;
+}
+.box-inline{
+  display: inline-block;
+  vertical-align: top;
+}
+.btn{
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  background:none;
+  cursor: pointer;
+  @include web_transition(all 0.2s ease-in-out);
+}
+.container{
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: 85px;
+  padding-right: 85px;
+}
+.row-half{
+  width:50%;
+  float: left;
+}
+.row-double-three{
+  width: 66.666666%;
+  float: left;
+}
+.row-three{
+  width: 33.333333%;
+  float: left;
+}
+.box-right{
+  float: right;
+}
+.box-left{
+  float: left;
+}
+.clearfix:after{
+  clear: both;
+}
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+.box-table{
+  width: 100%;
+  display: table;
+}
+.vertical-middle {
+  height: 100%;
+  display: table;
+  width: 100%;
+}
+.content-vertical,
+.item-cell{
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
+}
+.box-tab{
+  display: none;
+}
+.box-tab.active{
+  display: block;
+}
+.full-height{
+  height: 100%;
+}
+.flexible{
+  display: flex;
+  display: -ms-flexbox;
+  align-items: stretch;
+  -ms-flex-align: stretch;
+  &.center{
+    align-items: center;
+    -ms-flex-align: center;
+  }
+  &.between{
+    justify-content: space-between;
+    -ms-flex-pack: justify!important;
+  }
+  &.end{
+    justify-content:flex-end;
+    -ms-flex-pack: end;
+  }
+  &.is-vertical{
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  &.wrap{
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  &.justify-center{
+    justify-content: center;
+    -ms-flex-pack: center;
+  }
+  .col{
+    &-auto{
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+    }
+    &-full{
+      width: 100%;
+    }
+    &-end{
+      -ms-flex-item-align: end!important;
+      align-self: flex-end!important;
+    }
+    &-start{
+      -ms-flex-item-align: start!important;
+      align-self: flex-start!important;
+    }
+  }
+}
+/*colors*/
+.grey{
+  color: $color_gray_1;
+}
+.black{
+  color: $color_black;
+}
+.white{
+  color: $color_white;
+}
+.blue{
+  color: $color_blue_1;
+}
+.red{
+  color: $color_red_1;
+}
+.yellow{
+  color: $color_yellow_1;
+}
+.green{
+  color: $color_green_1;
+}
+
+/*CONTENT*/
+.wrapper{
+  width: 100%;
+  height: 100%;
+}
+.main{
+  overflow-y: visible;
+  overflow-x: hidden;
+}

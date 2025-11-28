@@ -1,0 +1,23 @@
+<section class="section section-blog">
+    {% include "blocks/blog/_blog-cat-dropdown.html" %}
+    <div class="container">
+        <div class="section-blog-content_right">
+            <div class="section-blog-content_title">
+                <h2>All blog posts</h2>
+                {% include "blocks/blog/_blog-filter.html" %}
+            </div>
+            {% include "blocks/blog/_blog-item.html" %}
+            {% include "blocks/blog/_blog-item.html" %}
+            <div class="section-blog-more">
+                <a href="#" class="link">Show more</a>
+            </div>
+        </div>
+        <div class="section-blog-content_left">
+            {% include "blocks/blog/_blog-search.html" %}
+            {% include "blocks/blog/_blog-cat.html" %}
+            {% include "blocks/blog/_blog-tags.html" %}
+            {% include "blocks/blog/_blog-subscribe.html" %}
+        </div>
+    </div>
+</section>
+

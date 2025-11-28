@@ -1,0 +1,30 @@
+header{
+  padding: 18px 30px;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 5;
+  width: 100%;
+  &.scroll{
+    background: rgba(255, 255, 255, 0.7);
+  }
+  &~.main{
+    padding-top: 72px;
+  }
+  .logo{
+    margin-right: 60px;
+    margin-top: -7px;
+    img{
+      height: 42px;
+      width: 165px;
+    }
+  }
+  .header{
+    &-mobile-navigate{
+      display: none;
+    }
+  }
+  .btn-menu{
+    margin-right: -15px;
+  }
+}
