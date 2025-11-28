@@ -1,0 +1,242 @@
+.section-roadmap{
+  &-year{
+    margin-top: 10px;
+    max-width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+    &-title{
+      font-size: 32px;
+      color: $color_title;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 10px;
+      font-weight: 300;
+      &.prev{
+        color: $color_black;
+        opacity: 0.5;
+      }
+    }
+    &-items{
+      background: url("../images/roadmap-line.png") repeat-y 50% 0px;
+      .section-roadmap-item{
+        &:first-child{
+          .point{
+            top:0;
+          }
+          .section-roadmap-item-body{
+            padding-top: 0.35em;
+          }
+        }
+        &:last-child{
+          height: auto;
+          min-height: 110px;
+        }
+      }
+
+    }
+    &.reserve{
+      .section-roadmap-year{
+        &-title{
+          margin-left: -80px;
+        }
+        &-items{
+          background-position: 50% -110px;
+        }
+      }
+
+    }
+  }
+  &-item{
+    width: 50%;
+    position: relative;
+    font-size: 16px;
+    height: 110px;
+    color: $color_black;
+    &-body{
+      padding: 1em 2.2em;
+      @include border_radius(30px);
+      position: relative;
+    }
+    .data{
+      color: $color_blue_2;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 5px;
+    }
+    .text{
+      font-size: 1.125em;
+      line-height: 1.67;
+    }
+    .point{
+      width: 32px;
+      height: 32px;
+      z-index: 1;
+      @include border_radius(50%);
+      @include bg_gradient-blue-vertical;
+      position: absolute;
+      top:9px;
+      @include box_shadow(0 5px 25px rgba(0, 0, 0, 0.25));
+    }
+    &:nth-child(odd){
+      text-align: left;
+      left: 50%;
+      .point{
+        left:-16px;
+      }
+    }
+    &:nth-child(even){
+      text-align: right;
+      padding-right: 36px;
+      .point{
+        right: -16px;
+      }
+    }
+    &.active{
+      .section-roadmap-item-body{
+        @include bg_gradient-blue;
+      }
+      color: $color_white;
+      .data{
+        color: $color_white;
+      }
+      .point{
+        border:8px solid $color_white;
+        @include box_shadow(none);
+        &:after{
+          position: absolute;
+          top:-50%;
+          left:-50%;
+          width: 200%;
+          height: 200%;
+          content: '';
+          @include box_shadow(inset 0 -5px 12px rgba(0, 0, 0, 0.25));
+          border-radius: 50%;
+        }
+      }
+    }
+    &.check{
+      color: $color_gray_1;
+      .data{
+        opacity: 0.5;
+      }
+      .point{
+        background: $color_white;
+        &:after{
+          position: absolute;
+          top:0;
+          left:5px;
+          width: 100%;
+          height: 22px;
+          background: url("../images/check.png") no-repeat center top;
+          content: '';
+        }
+      }
+    }
+    &.point{
+      .point{
+        width: 20px;
+        height: 20px;
+        margin: 6px;
+        &:after{
+          position: absolute;
+          top:20%;
+          left:20%;
+          width: 60%;
+          height: 60%;
+          content: '';
+          border-radius: 50%;
+          background: $color_white;
+        }
+      }
+      .text{
+        margin-top: -5px;
+      }
+    }
+    &.reserve{
+      height: 0!important;
+      min-height: 0!important;
+      &+.section-roadmap-item{
+          .point{
+            top:0;
+          }
+          .section-roadmap-item-body{
+            padding-top: 0.35em;
+          }
+      }
+    }
+    &.null{
+      .point{
+        background: $color_white;
+        border:1px dashed $color_blue_2;
+      }
+      &:last-child{
+        .point{
+          border:1px dashed #88bfff;
+          @include box_shadow(0 5px 25px rgba(0, 0, 0, 0.12));
+        }
+
+      }
+    }
+  }
+}
+@media(max-width: 940px) {
+  .section-roadmap-item{
+    font-size: 14px;
+  }
+}
+@media(max-width: 767px) {
+  .section-roadmap{
+    &-year{
+      &-title{
+        text-align: left;
+        margin-left: 0!important;
+      }
+      &-items{
+        background:none;
+        position: relative;
+        &:after{
+          border-right:1px dashed #88bfff;
+          width: 23px;
+          height: 100%;
+          content: '';
+          position: absolute;
+          top:0;
+          left:0;
+        }
+      }
+      &.reserve{
+        .section-roadmap-year{
+          &-title{
+            margin-left: 0;
+          }
+        }
+
+      }
+    }
+    &-item{
+      width: 100%;
+      height: auto;
+      min-height: 110px;
+      padding-left: 24px;
+      &:not(.active){
+        .section-roadmap-item-body{
+          padding-right: 0;
+        }
+      }
+      &:nth-child(odd){
+        left: 0;
+      }
+      &:nth-child(even){
+        text-align: left;
+        padding-right: 0;
+        .point{
+          left: -16px;
+        }
+      }
+      .text {
+        font-size: 1em;
+      }
+    }
+  }
+}

@@ -1,0 +1,202 @@
+.products{
+  padding: 120px 0 30px;
+  &_name{
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    color: $color_black;
+    padding-bottom: 50px;
+    font-weight: 300;
+  }
+  &_content{
+    position: relative;
+    &_item{
+      justify-content: right;
+      -webkit-justify-content: right;
+      padding-bottom: 100px;
+      &:nth-child(2n){
+         flex-direction: row-reverse;
+       }
+      &:nth-child(2n+1){
+        padding-left: 15px;
+      }
+      &_logo{
+        position: relative;
+        max-width: 390px;
+        width: 100%;
+        padding: 15px 25px;
+        height: 220px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 8px;
+        border: 1px solid #ffffff;
+        @include box_shadow(0 8px 38px rgba(0,0,0,.2));
+        background: #ffffff; /* Old browsers */
+        background: -moz-linear-gradient(-45deg, #ffffff 0%, #f6f6f6 79%, #f2f2f2 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, #ffffff 0%,#f6f6f6 79%,#f2f2f2 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, #ffffff 0%,#f6f6f6 79%,#f2f2f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+        &:before{
+          position: absolute;
+          top:-10px;
+          left: -10px;
+          width: 100%;
+          height: 100%;
+          border: 1px solid #f2f2f2;
+          border-radius: 8px;
+          content: '';
+          z-index: -1;
+        }
+        &:after{
+          position: absolute;
+          top:-20px;
+          left: -20px;
+          width: 100%;
+          height: 100%;
+          border: 1px solid #f2f2f2;
+          border-radius: 8px;
+          content: '';
+          z-index: -1;
+        }
+        &:hover{
+          @include box_shadow(0 5px 32px rgba(171,208,252,.99));
+        }
+      }
+      &_text{
+        color: $color_black;
+        padding-left: 75px;
+        padding-right: 75px;
+        //max-width:675px;
+        //width: 100%;
+        &_name{
+          font-size: 32px;
+          line-height: 42px;
+          font-weight: 300;
+          padding-bottom: 20px;
+          span{
+            &.gradient-red{
+              font-weight: bold;
+              background: linear-gradient(45deg, #ec1c24 33%, #c3171d 66%, #8e1013);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              color: #ec1c24;
+            }
+            &.gradient-orange{
+              font-weight: bold;
+              background: linear-gradient(45deg, #ffc700 33%, #ecb700 66%, #d9a800);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              color: #ffc700;
+            }
+            &.gradient-green{
+              font-weight: bold;
+              background: linear-gradient(45deg, #88dd00 33%, #74bd00 66%, #5c9300);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              color: #88dd00;
+            }
+            &.gradient-grey{
+              font-weight: bold;
+              background: linear-gradient(45deg, #a5a5a5 33%, #7c7c7c 66%, #535353);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              color: #a5a5a5;
+            }
+          }
+        }
+        &_info{
+          font-size: 18px;
+          line-height: 30px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+  .icon-cx{
+    width: 191px;
+    height: 111px;
+    background: url("../images/icon/cx.png") no-repeat center;
+  }
+  .icon-pay{
+    width: 206px;
+    height: 113px;
+    background: url("../images/icon/pay.png") no-repeat center;
+  }
+  .icon-ventures{
+    width: 284px;
+    height: 111px;
+    background: url("../images/icon/ventures.png") no-repeat center;
+  }
+  .icon-reserve{
+    width: 273px;
+    height: 112px;
+    background: url("../images/icon/reserve.png") no-repeat center;
+  }
+}
+//---media---
+@media (max-width: 1024px) {
+  .products{
+    &_content{
+      &_item{
+        &_text {
+          padding-left: 35px;
+          padding-right: 35px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .products{
+    padding: 100px 0 30px;
+    &_name {
+      font-size: 38px;
+      line-height: 40px;
+      padding-bottom: 30px;
+    }
+    &_content{
+      &:before{
+        bottom:-270px;
+        opacity: 0.5;
+      }
+      &_item{
+        display: block;
+        padding-bottom: 40px;
+        &_logo {
+          max-width: 280px;
+          width: 100%;
+          margin: 10px;
+          padding: 10px;
+          height: 170px;
+          .icon{
+            transform: scale(0.7);
+          }
+        }
+        &:nth-child(2n+1) {
+          padding-left: 0;
+        }
+        &:nth-child(2n) {
+          flex-direction: row;
+          padding-left: 0;
+        }
+        &_text {
+          padding-left: 0;
+          padding-right: 0;
+          &_name {
+            font-size: 21px;
+            line-height: 30px;
+            padding-bottom: 10px;
+            padding-top: 20px;
+          }
+          &_info {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}

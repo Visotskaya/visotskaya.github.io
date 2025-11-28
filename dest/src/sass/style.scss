@@ -1,0 +1,29 @@
+@import "base/reset";
+@import "base/mixins";
+@import "base/base";
+@import "base/button";
+@import "base/navigate";
+@import "base/icon";
+
+@import "elements/table";
+@import "elements/element";
+@import "elements/form";
+@import "elements/page";
+
+@import "../blocks/header/header";
+@import "../blocks/footer/footer";
+@import "../blocks/contact/contact";
+@import "../blocks/roadmap/roadmap";
+@import "../blocks/partners/partners";
+@import "../blocks/team/team";
+
+
+@import "../blocks/index/first-block";
+@import "../blocks/index/download";
+@import "../blocks/index/why";
+@import "../blocks/index/problems";
+@import "../blocks/index/products";
+@import "../blocks/index/distribution";
+@import "../blocks/index/funds";
+
+@import "media";

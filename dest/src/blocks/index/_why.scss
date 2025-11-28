@@ -1,0 +1,111 @@
+.why {
+  padding: 60px 0;
+  &_name{
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    color: $color_black;
+    padding-bottom: 30px;
+    font-weight: 300;
+  }
+  &_content {
+    &_item{
+      &:first-child{
+        margin-top: -30px;
+        text-align: center;
+      }
+      &:last-child{
+        padding-left: 40px;
+      }
+      width: 33%;
+      &_items{
+        justify-content: right;
+        -webkit-justify-content: right;
+        padding-bottom: 30px;
+        .point{
+          width: 32px;
+          height: 32px;
+          z-index: 1;
+          position: relative;
+          border-radius: 50%;
+          background: #04c6e9;
+          background: -moz-linear-gradient(top,#04c6e9 0%,#016aeb 100%);
+          background: -webkit-linear-gradient(top,#04c6e9 0%,#016aeb 100%);
+          background: linear-gradient(to bottom,#04c6e9 0%,#016aeb 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04c6e9', endColorstr='#016aeb',GradientType=0 );
+          &:after {
+            position: absolute;
+            top: 0;
+            left: 5px;
+            width: 100%;
+            height: 22px;
+            background: url(../images/check-shadow.png) no-repeat center top;
+            content: '';
+          }
+        }
+        .text{
+          width: 90%;
+          font-weight: 300;
+          padding-left: 22px;
+          font-size: 18px;
+          line-height: 30px;
+          color: $color_black;
+          span{
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+
+//---media---
+@media (max-width: 1024px) {
+  .why{
+    &_content{
+      &_item{
+        &:first-child{
+          width: 25%;
+        }
+        &:last-child {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .why{
+    padding-top: 20px;
+    &_name {
+      font-size: 38px;
+      line-height: 40px;
+    }
+    &_content{
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      &_item{
+        width: 100%;
+        &:first-child{
+          width: 100%;
+          margin-top: 0;
+          margin-bottom: 30px;
+        }
+        &:last-child {
+          padding-left: 0;
+        }
+        &_items{
+          padding-bottom: 20px;
+          .text {
+            padding-left: 14px;
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+        img{
+          max-width: 55%;
+        }
+      }
+    }
+  }
+}

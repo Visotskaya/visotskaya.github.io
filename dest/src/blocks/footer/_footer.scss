@@ -1,0 +1,34 @@
+.footer{
+  padding: 30px 0;
+  position: relative;
+  &-copy{
+    color: $color_black;
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 14px;
+  }
+  &-nav{
+    padding-bottom: 14px;
+    font-size: 16px;
+    max-width:270px;
+    margin: 0 auto;
+    justify-content: right;
+    -webkit-justify-content: right;
+    > div{
+      padding: 0 10px;
+      &:first-child{
+        border-right: 1px solid #b9b9b9;
+      }
+    }
+    a{
+      border-bottom: 1px solid #ffffff;
+    &:hover{
+      border-color: $color_blue_1;
+    }
+    }
+  }
+  &-text{
+    font-size: 12px;
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,138 @@
+.first-block {
+  text-align: center;
+  background: url("../images/bg-index.png") no-repeat center;
+  background-size: cover;
+  padding-top: 72px;
+  padding-bottom: 85px;
+  &_logo {
+    padding: 35px 0;
+  }
+  &_text {
+    font-size: 18px;
+    line-height: 24px;
+    > div {
+      &:first-child {
+        color: #2880ea;
+      }
+      &:last-child {
+        color: #e8e8e8;
+        font-weight: 100;
+      }
+    }
+  }
+  &_home-text {
+    color: $color_white;
+    font-size: 72px;
+    font-weight: 100;
+    padding-top: 50px;
+    padding-bottom: 35px;
+  }
+  &_timer {
+    padding-bottom: 60px;
+    .timer {
+      max-width: 560px;
+      width: 100%;
+      margin: 0 auto;
+      height: 105px;
+      &__number-container {
+        background-image: url("../images/timer-border.png");
+        max-width: 107px;
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+      }
+      &__number-title {
+        display: block;
+        font-size: 12px;
+        color: #2880ea;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+      }
+      &__digit {
+        font-size: 56px;
+        line-height: 56px;
+        font-weight: 100;
+        color: $color_white;
+
+      }
+      &__colon {
+        color: $color_white;
+        font-size: 56px;
+        line-height: 56px;
+      }
+    }
+  }
+  &_text-start {
+    text-transform: uppercase;
+    > div {
+      &:first-child {
+        color: #e8e8e8;
+        font-weight: 100;
+        font-size: 20px;
+        padding-bottom: 20px;
+      }
+      &:last-child {
+        color: #2880ea;
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+//---media---
+@media (max-width: 767px) {
+  .first-block {
+    &_logo {
+      padding: 16px 0;
+      img{
+        max-width:55%;
+      }
+    }
+    &_text {
+      font-size: 16px;
+    }
+    &_home-text{
+      font-size: 45px;
+      padding-top: 20px;
+      padding-bottom: 25px;
+    }
+    &_timer {
+      padding-bottom: 30px;
+      .timer {
+        max-width: 310px;
+        height: 60px;
+        &__number-container {
+          background-image: url("../images/timer-border.png");
+          background-size: contain;
+          max-width: 60px;
+          padding: 5px;
+        }
+        &__number-title {
+          font-size: 10px;
+          padding-bottom: 3px;
+        }
+        &__digit {
+          font-size: 30px;
+          line-height: 30px;
+        }
+        &__colon {
+          font-size: 30px;
+          line-height: 30px;
+        }
+      }
+    }
+    &_text-start {
+      text-transform: uppercase;
+      > div {
+        &:first-child {
+          font-size: 18px;
+          padding-bottom: 10px;
+        }
+        &:last-child {
+          color: #2880ea;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

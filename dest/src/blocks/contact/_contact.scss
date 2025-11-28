@@ -1,0 +1,194 @@
+.section-contact{
+  //@include bg_gradient;
+  background: url(../images/bg_blue.png) no-repeat center;
+  background-size: cover;
+  color: $color_white;
+  text-align: center;
+  position: relative;
+  padding: 130px 0;
+  margin-bottom: -130px;
+  margin-top: -130px;
+  &:before{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/contact-bg.png") repeat-x center;
+    content: '';
+  }
+  &-link{
+    padding: 50px 0;
+    .btn-border{
+      margin: 0 15px;
+      max-width: 240px;
+      width: 100%;
+      font-weight: 400;
+      font-size: 16px;
+      text-transform: inherit;
+      .icon{
+        margin-right: 10px;
+      }
+      &:hover{
+        .icon-fb{
+          @include web_transition(all .2s ease-in-out);
+          background: url("../images/icon/facebookH.png") repeat-x center !important;
+        }
+        .icon-tw{
+          @include web_transition(all .2s ease-in-out);
+          background: url("../images/icon/twitterH.png") repeat-x center;
+        }
+        .icon-tg{
+          @include web_transition(all .2s ease-in-out);
+          background: url("../images/icon/tgH.png") repeat-x center;
+        }
+      }
+    }
+  }
+  &-form{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 55px 0 0;
+    //border-top: 1px solid $border_color_1;
+    border-top: 1px solid rgba(0,0,0, 0.3);
+    .form{
+      &-name{
+        font-weight: 100;
+        padding-bottom: 0;
+      }
+      &-control{
+        border-radius: 25px;
+        padding: 15px 25px;
+        font-size: 16px;
+        border: 2px solid #ffffff;
+        @include web_transition(all .2s ease-in-out);
+        @include box_shadow(0 5px 32px rgba(0,0,0,.35));
+        &:hover,
+        &:focus{
+          cursor: pointer;
+          border-color: #17c5eb;
+        }
+        &-icon{
+          a{
+            display: block;
+            padding: 15px;
+          }
+        }
+      }
+    }
+  }
+  &-directly{
+    position: relative;
+    max-width:365px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    padding-top: 10px;
+    &-text{
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 22px;
+      padding-bottom: 15px;
+      letter-spacing: 0.35px;
+      text-align: center;
+    }
+    &-link{
+      >div{
+        width: 50%;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        &:first-child{
+          border-right:1px solid #ffffff;
+          padding-right: 28px;
+          text-align: right;
+        }
+        &:last-child{
+          padding-left: 28px;
+          text-align: left;
+        }
+      }
+      a{
+        font-size: 18px;
+        line-height: 22px;
+        border-bottom:1px solid #ffffff;
+        color: $color_white;
+        &:hover{
+          border-color:#8facf4 ;
+          color: #8facf4;
+        }
+      }
+    }
+  }
+  .icon-send{
+     width: 26px;
+     height: 20px;
+     background: url("../images/icon/send.png") repeat-x center;
+   }
+  .icon-fb{
+    width: 10px;
+    height: 19px;
+    background: url("../images/icon/facebook.png") repeat-x center;
+  }
+  .icon-tw{
+    width: 23px;
+    height: 19px;
+    background: url("../images/icon/twitter.png") repeat-x center;
+  }
+  .icon-tg{
+    width: 22px;
+    height: 20px;
+    background: url("../images/icon/tg.png") repeat-x center;
+  }
+}
+@media (max-width: 940px) {
+  .section-contact{
+    &-link{
+      .btn-border {
+        margin: 0 10px;
+        max-width: 27%;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .section-contact{
+
+    &-link{
+      padding: 20px 0;
+      .btn-border {
+        margin: 10px auto;
+        max-width: 240px;
+        display: block;
+      }
+    }
+    &-form {
+      padding-top: 15px;
+      .form{
+        &-name {
+          font-size: 38px;
+          margin-bottom: 15px;
+        }
+        &-group {
+          margin-bottom: 15px;
+        }
+        &-control {
+          border-radius: 25px;
+          padding: 10px 20px;
+          font-size: 14px;
+        }
+      }
+    }
+    &-directly{
+      padding-bottom: 20px;
+      &-text {
+        font-size: 15px;
+        line-height: 20px;
+      }
+      &-link{
+        a{
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+}

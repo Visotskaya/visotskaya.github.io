@@ -1,0 +1,12 @@
+.page{
+  &-inner{
+    padding: 70px 0;
+    background: url("../images/bg.jpg") repeat-x center top;
+    &-title{
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      text-align: center;
+      letter-spacing: 5px;
+    }
+  }
+}

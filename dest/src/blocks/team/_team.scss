@@ -1,0 +1,116 @@
+.section-team{
+  padding-bottom: 40px;
+  &-list{
+    @include block_flex;
+    @include flex_wrap;
+    @include flex_justify_around;
+    min-height: 600px;
+    margin: 0 -15px;
+  }
+  &-item{
+    width: 290px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -30px;
+    height: 360px;
+    position: relative;
+    cursor: pointer;
+    &-body{
+      padding: 30px 15px;
+      border-radius: 20px;
+      @include web_transition(all .2s ease-in-out);
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    .image{
+      text-align: center;
+      margin: 10px auto 35px;
+      width: 175px;
+      height: 175px;
+      position: relative;
+      &:after{
+        position: absolute;
+        top:-10%;
+        left:-10%;
+        width: 120%;
+        height: 120%;
+        content: '';
+        background: url("../images/team/border.png") no-repeat center;
+      }
+
+    }
+    .name{
+      font-size: 26px;
+      line-height: 1.15;
+      color: $color_sub_title;
+    }
+    .position{
+      color: $color_black;
+      font-size: 16px;
+      line-height: 1.375;
+      font-weight: 300;
+      margin-top: 5px;
+      margin-bottom: 25px;
+      max-width: 215px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .text{
+      font-size: 14px;
+      line-height: 1.58;
+      display: none;
+      padding: 0 10px;
+    }
+    &:hover{
+      .section-team-item{
+        &-body{
+          background: #016aeb;
+          height: 520px;
+          @include box_shadow(0 10px 35px rgba(1, 111, 242, 0.4));
+          color: $color_white;
+          z-index: 1;
+          .name,.position{
+            color: inherit;
+          }
+          .position{
+            opacity: 0.5;
+          }
+          .text{
+            display: block;
+          }
+        }
+      }
+
+    }
+  }
+}
+@media(max-width: 1024px) {
+  .section-team{
+    &-item{
+      cursor: default;
+      height: auto;
+      .text{
+        display: block;
+      }
+      .position{
+        margin-bottom: 5px;
+      }
+      &:hover{
+        .section-team-item-body{
+          height: 100%;
+          background: none;
+          color: $color_gray_1;
+          @include box_shadow(none);
+          .name{
+            color: $color_sub_title;
+          }
+          .position{
+            opacity: 1;
+            color: $color_black;
+          }
+        }
+      }
+    }
+  }
+}

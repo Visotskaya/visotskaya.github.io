@@ -1,0 +1,75 @@
+.funds {
+  background: #f3f3f2;
+  margin-top: -130px;
+  padding-top: 190px;
+  padding-bottom: 90px;
+  &_content {
+    &_item {
+      &:first-child {
+        width: 58%;
+        padding-left: 80px;
+      }
+      &_name {
+        font-size: 48px;
+        line-height: 58px;
+        text-align: left;
+        color: $color_black;
+        padding-bottom: 30px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+      &_text {
+        font-size: 18px;
+        line-height: 30px;
+        text-align: left;
+        color: $color_black;
+        font-weight: 300;
+        span {
+          padding-bottom: 20px;
+          display: block;
+        }
+      }
+      img {
+      }
+    }
+  }
+}
+//media
+@media (max-width: 940px) {
+  .funds{
+    &_content{
+      &_item{
+        &:first-child {
+          width: 75%;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .funds{
+    padding-top: 140px;
+    padding-bottom: 50px;
+    &_content{
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      &_item{
+        &_name {
+          font-size: 38px;
+          line-height: 40px;
+          padding-bottom: 20px;
+        }
+        &_text {
+          font-size: 16px;
+          line-height: 25px;
+        }
+        width: 100%;
+        &:first-child {
+          width: 100%;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}

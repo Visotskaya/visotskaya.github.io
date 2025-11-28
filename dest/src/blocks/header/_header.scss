@@ -1,0 +1,163 @@
+header{
+  text-align: center;
+}
+.header{
+ @include bg_gradient;
+  @include box_shadow(0 5px 15px rgba(1, 111, 242, 0.25));
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 72px;
+  line-height: 72px;
+  z-index: 10;
+  &~.main{
+    padding-top: 72px;
+  }
+  /*&:after{
+    position: absolute;
+    top:100%;
+    left:0;
+    width: 100%;
+    height: 355px;
+    background: url("../images/bg.jpg") repeat-x center top;
+    content: '';
+    z-index: -1;
+  }*/
+  &-logo{
+    img{
+      vertical-align: middle;
+    }
+  }
+  &-nav{
+    text-transform: uppercase;
+    li{
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 25px;
+      position: relative;
+      a{
+        color: $color_white;
+        position: relative;
+        &:hover{
+          opacity: 0.3;
+        }
+      }
+      &.active{
+        a{
+          opacity: 0.3;
+        }
+        &:after{
+          position: absolute;
+          bottom:0;
+          left:0;
+          width: 100%;
+          height: 3px;
+          background: $color_white;
+          content: '';
+        }
+      }
+    }
+  }
+  &-menu{
+    line-height: normal;
+    .btn-menu{
+      display: none;
+      margin-right: -15px;
+    }
+  }
+  &.home{
+    @include web_transition(all .2s ease-in-out);
+    .header-logo{
+      @include web_transition(all .2s ease-in-out);
+      opacity: 0.99;
+    }
+    &:not(.scroll){
+      background: none;
+      .header-logo{
+        opacity: 0.5;
+      }
+      @include box_shadow(none);
+      .header-nav{
+        li{
+          &:after{display: none;}
+          &.active{
+            a{
+              opacity: 0.3;
+            }
+          }
+        }
+      }
+    }
+    &~.main{
+      padding-top: 0;
+    }
+  }
+}
+@media(max-width: 1040px) {
+  .header{
+    &-nav{
+      li{
+        margin: 0 18px;
+      }
+    }
+  }
+}
+@media(min-width: 941px) {
+  .header-nav{
+    display: block!important;
+  }
+}
+@media(max-width: 940px) {
+  .header{
+    &-logo{
+      z-index: 11;
+    }
+    &-nav{
+      display: none;
+      position: fixed;
+      top:0;
+      left:-100%;
+      height: 100%;
+      width: 100%;
+      padding-top: 100px;
+      line-height: 38px;
+      z-index: 9;
+      @include bg_gradient-blue-vertical;
+      li{
+        display: block;
+        margin: 0;
+        &:after{
+          display: none;
+        }
+        a{
+          border-bottom: 3px solid transparent;
+        }
+        &.active{
+          a{
+            border-bottom-color: $color_white;
+            opacity: 1;
+          }
+        }
+      }
+      &.open{
+        left: 0;
+      }
+    }
+    &-menu{
+      z-index: 11;
+      .btn-border{
+        min-width: 145px;
+      }
+      .btn-menu{
+        display: inline-block;
+      }
+    }
+  }
+  .menu-open{
+    overflow: hidden;
+    .header-logo{
+      opacity: 0.99!important;
+    }
+  }
+}

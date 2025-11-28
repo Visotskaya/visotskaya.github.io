@@ -1,0 +1,117 @@
+.problems{
+  background: url(../images/bg_greey1.png) no-repeat center;
+  background-size: cover;
+  color: $color_white;
+  text-align: center;
+  position: relative;
+  padding: 175px 0 200px;
+  margin-bottom: -130px;
+  margin-top: -130px;
+  &:before{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/problems-bg.png") repeat-x center;
+    content: '';
+  }
+  &_text{
+    text-align: center;
+    color: #016ff2;
+    font-size: 32px;
+    line-height: 44px;
+    padding-bottom: 50px;
+    >span{
+      &:first-child{
+        font-weight: bold;
+        display: block;
+      }
+      &:last-child{
+        font-weight: 300;
+      }
+    }
+  }
+  &_content{
+    &_item{
+      width: 32%;
+      text-align: center;
+      &_icon{
+        height: 120px;
+      }
+      &_text{
+        color: $color_black;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 300;
+      }
+    }
+  }
+  .icon-services{
+    width: 100px;
+    height: 100px;
+    background: url("../images/icon/services.png") no-repeat center;
+  }
+  .icon-question{
+    width: 91px;
+    height: 90px;
+    background: url("../images/icon/question.png") no-repeat center;
+  }
+  .icon-access{
+    width: 100px;
+    height: 93px;
+    background: url("../images/icon/access.png") no-repeat center;
+  }
+}
+//media
+@media (max-width: 940px) {
+  .problems{
+    &_content{
+      &_item{
+        &_text{
+          br{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .problems{
+    padding: 220px 0 200px;
+    margin-bottom: -230px;
+    margin-top: -190px;
+    &_text {
+      font-size: 22px;
+      line-height: 32px;
+      padding-bottom: 30px;
+      >span{
+        &:first-child{
+          font-weight: bold;
+          display: initial;
+        }
+      }
+    }
+    &_content{
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      &_item{
+        width: 100%;
+        max-width: 330px;
+        margin: 0 auto;
+        padding-bottom: 25px;
+        &_text{
+          font-size: 16px;
+          line-height: 24px;
+          br{
+            display: none;
+          }
+        }
+        &_icon {
+          height: 100px;
+        }
+      }
+    }
+  }
+}

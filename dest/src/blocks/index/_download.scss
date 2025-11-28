@@ -1,0 +1,71 @@
+.download{
+  background: url("../images/bg_blue.png") no-repeat center;
+  background-size: cover;
+  color: $color_white;
+  text-align: center;
+  position: relative;
+  padding: 180px 0;
+  margin-bottom: -70px;
+  margin-top: -130px;
+  &_text{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 100;
+    max-width: 730px;
+    margin: 0 auto;
+  }
+  &_link{
+    .btn-border{
+      max-width: 240px;
+      width: 100%;
+      text-align: left;
+      text-transform: none;
+      margin: 0 15px;
+      .icon{
+        margin-right: 25px;
+      }
+      &:hover{
+
+        .icon-download{
+          @include web_transition(all .2s ease-in-out);
+          background: url("../images/icon/downloadH.png") no-repeat center;
+        }
+
+      }
+    }
+  }
+  &_line{
+    padding: 50px 0;
+  }
+  .icon-download{
+    width: 16px;
+    height: 21px;
+    background: url("../images/icon/download.png") no-repeat center;
+  }
+  .icon-line{
+    width: 166px;
+    height: 1px;
+    background: url("../images/icon/line.png") no-repeat center;
+  }
+}
+@media (max-width: 767px) {
+  .download {
+    padding: 150px 0;
+    &_text {
+      font-size: 16px;
+      line-height: 26px;
+    }
+    &_line {
+      padding: 20px 0;
+    }
+    &_link{
+      .btn-border{
+        max-width: 216px;
+        margin: 5px 0;
+        .icon {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
