@@ -3,5 +3,5 @@ var animation = lottie.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'lottie/smart-data.json' // the path to the animation json
+    path: './lottie/smart-data.json' // the path to the animation json
 });
