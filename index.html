@@ -31,13 +31,19 @@
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
+        gap:2em;
         padding: 0;
         width: 100%;
     }
     .navigate__nav li{
-        margin: 2.5em;
+        margin:1em 0;
         text-align: center;
         line-height: 1.5em;
+    }
+    .navigate__nav img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     .navigate__nav li a{
         color: #02b7d8;
@@ -45,11 +51,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 2em;
+        padding: 0.5em;
+        box-sizing: border-box;
         border: 1px solid lightgray;
         border-radius: 5px;
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
         transition: all 0.3s ease-in-out;
     }
     .navigate__nav li a:hover{
@@ -57,7 +64,7 @@
       background: #BEC7E0;
     }
     footer{
-      padding: 2.5em;
+      padding: 2em;
     }
   </style>
 </head>
@@ -65,16 +72,33 @@
   <header>Welcome to gitHub</header>
   <section class="navigate">
     <ul class="navigate__nav">
-      <li><a href="https://visotskaya.github.io/socium/ico/" target="_blank" aria-label="">ICO</a></li>
-      <li><a href="https://visotskaya.github.io/socium/landing/" target="_blank">SociumTrade Landing</a></li>
-      <li><a href="https://visotskaya.github.io/dest" target="_blank" aria-label="">Desto</a></li>
-      <li><a href="https://visotskaya.github.io/art-media/" target="_blank" aria-label="">Art Media</a></li>
-      <li><a href="https://visotskaya.github.io/ulmart-promo" target="_blank" aria-label="">Ulmart Game</a></li>
-      <li><a href="https://visotskaya.github.io/ulmart-promo-may" target="_blank" aria-label="">Ulmart Holidays</a></li>
+      <li><a href="https://visotskaya.github.io/socium/ico/" target="_blank" aria-label="ICO">
+        <img src="https://raw.githubusercontent.com/Visotskaya/visotskaya.github.io/refs/heads/master/nav/ico.webp" alt="">
+      </a></li>
+      <li><a href="https://visotskaya.github.io/socium/landing/" target="_blank" aria-label="SociumTrade Landing">
+        <img src="https://raw.githubusercontent.com/Visotskaya/visotskaya.github.io/refs/heads/master/nav/st.webp" alt="">
+      </a></li>
+      <li><a href="https://visotskaya.github.io/dest" target="_blank" aria-label="Desto">
+        
+        <img src="https://raw.githubusercontent.com/Visotskaya/visotskaya.github.io/refs/heads/master/nav/dest.webp" alt="">
+      </a></li>
+      <li><a href="https://visotskaya.github.io/art-media/" target="_blank" aria-label="Art Media">
+        <img src="https://raw.githubusercontent.com/Visotskaya/visotskaya.github.io/refs/heads/master/nav/art.webp" alt="">
+      </a></li>
+      <li><a href="https://visotskaya.github.io/ulmart-promo" target="_blank" aria-label="Ulmart Game">
+        <img src="https://raw.githubusercontent.com/Visotskaya/visotskaya.github.io/refs/heads/master/nav/promo.webp" alt="">
+      </a></li>
+      <li><a href="https://visotskaya.github.io/ulmart-promo-may" target="_blank" aria-label="Ulmart Holidays">
+        <img src="https://raw.githubusercontent.com/Visotskaya/visotskaya.github.io/refs/heads/master/nav/holiday.webp" alt="">
+      </a></li>
 
 
-      <li><a href="https://visotskaya.github.io/tizen" target="_blank" aria-label="">Tizen</a></li>
-      <li><a href="https://visotskaya.github.io/game" target="_blank" aria-label="">Screenshots from casino game</a></li>
+      <li><a href="https://visotskaya.github.io/tizen" target="_blank" aria-label="Tizen">
+        <img src="https://raw.githubusercontent.com/Visotskaya/visotskaya.github.io/refs/heads/master/nav/tizen.webp" alt="">
+      </a></li>
+      <li><a href="https://visotskaya.github.io/game" target="_blank" aria-label="Screenshots from casino game">
+        <img src="https://raw.githubusercontent.com/Visotskaya/visotskaya.github.io/refs/heads/master/nav/game.webp" alt="">
+      </a></li>
     </ul>
   </section>
   <footer>©Visotskaya 2025</footer>
